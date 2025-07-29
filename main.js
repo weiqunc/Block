@@ -25,26 +25,26 @@ document.addEventListener("DOMContentLoaded", function () {
 Thank you to everyone I met in this journey.
 It means a lot to me.`,
       photos: [
-        "postH-1.jpg",
-        "postH-2.jpg",
-        "postH-3.jpg",
-        "postH-4.jpg",
-        "postH-5.jpg",
-        "postH-6.jpg",
-        "postH-7.jpg",
-        "postH-8.jpg",
-        "postH-9.jpg",
-        "postH-10.jpg",
-        "postH-11.jpg",
-        "postH-12.jpg",
-        "postH-13.jpg",
-        "postH-14.jpg",
-        "postH-15.jpg",
-        "postH-16.jpg",
-        "postH-17.jpg",
-        "postH-18.jpg",
-        "postH-19.jpg",
-        "postH-20.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-1.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-2.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-3.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-4.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-5.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-6.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-7.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-8.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-9.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-10.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-11.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-12.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-13.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-14.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-15.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-16.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-17.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-18.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-19.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-20.jpg",
       ],
       size: "small",
       location: "Tokyo Japan",
@@ -168,19 +168,19 @@ It means a lot to me.`,
 
 我輕輕拂去黑板上的字跡，連同我的青春。`,
       photos: [
-        "postG-1.jpg",
-        "postG-2.jpg",
-        "postG-3.jpg",
-        "postG-4.jpg",
-        "postG-5.jpg",
-        "postG-6.jpg",
-        "postG-7.jpg",
-        "postG-8.jpg",
-        "postG-9.jpg",
-        "postG-10.jpg",
-        "postG-11.jpg",
-        "postG-12.jpg",
-        "postG-13.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-1.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-2.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-3.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-4.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-5.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-6.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-7.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-8.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-9.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-10.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-11.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-12.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-13.jpg",
         "https://media.githubusercontent.com/media/weiqunc/Block/main/postG-14.mp4",
         "https://media.githubusercontent.com/media/weiqunc/Block/main/postG-15.mp4",
       ],
@@ -241,17 +241,17 @@ Thank you, guys. I had a fantastic night.
 
 Now, I am back.`,
       photos: [
-        "postE-1.jpg",
-        "postE-2.jpg",
-        "postE-3.jpg",
-        "postE-4.jpg",
-        "postE-5.jpg",
-        "postE-6.jpg",
-        "postE-7.jpg",
-        "postE-8.jpg",
-        "postE-9.jpg",
-        "postE-10.jpg",
-        "postE-11.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-1.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-2.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-3.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-4.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-5.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-6.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-7.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-8.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-9.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-10.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-11.jpg",
       ],
       size: "large",
       location: "國立臺灣科學教育館",
@@ -342,15 +342,15 @@ Now, I am back.`,
 
 總召 陳偉群`,
       photos: [
-        "postD-1.jpg",
-        "postD-2.jpg",
-        "postD-3.jpg",
-        "postD-4.jpg",
-        "postD-5.jpg",
-        "postD-6.jpg",
-        "postD-7.jpg",
-        "postD-8.jpg",
-        "postD-9.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-1.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-2.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-3.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-4.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-5.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-6.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-7.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-8.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-9.jpg",
         "https://media.githubusercontent.com/media/weiqunc/Block/main/postD-10.mp4",
       ],
       size: "large",
@@ -379,16 +379,16 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
 
 I will be back.`,
       photos: [
-        "postC-1.jpg",
-        "postC-2.jpg",
-        "postC-3.jpg",
-        "postC-4.jpg",
-        "postC-5.jpg",
-        "postC-6.jpg",
-        "postC-7.jpg",
-        "postC-8.jpg",
-        "postC-9.jpg",
-        "postC-10.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-1.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-2.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-3.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-4.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-5.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-6.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-7.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-8.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-9.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-10.jpg",
       ],
       size: "small",
       location: "國立臺灣科學教育館",
@@ -429,6 +429,21 @@ I will be back.`,
   }
   const prevBtn = document.getElementById("prevPostBtn");
   const nextBtn = document.getElementById("nextPostBtn");
+
+  function preloadCurrentPostImages() {
+    const post = posts[currentPostIdx];
+
+    post.photos.forEach((src, index) => {
+      // 跳過第一張（已經載入）和影片
+      if (index === 0) return;
+
+      const isVideo = src.toLowerCase().match(/\.(mp4|mov|webm|avi)$/);
+      if (!isVideo) {
+        const img = new Image();
+        img.src = src;
+      }
+    });
+  }
 
   function openPost(idx) {
     currentPostIdx = idx;
@@ -545,6 +560,9 @@ I will be back.`,
           }
         }
       });
+
+      preloadNextImage();
+
       slides.forEach((img, i) => img.classList.toggle("active", i === current));
       const prev = modalSlider.querySelector(".prev");
       const next = modalSlider.querySelector(".next");
@@ -568,6 +586,22 @@ I will be back.`,
       }
       prev.disabled = current === 0;
       next.disabled = current === slides.length - 1;
+    }
+
+    function preloadNextImage() {
+      const post = posts[currentPostIdx];
+      const nextIndex = current + 1;
+
+      if (nextIndex < post.photos.length) {
+        const nextSrc = post.photos[nextIndex];
+        const isVideo = nextSrc.toLowerCase().match(/\.(mp4|mov|webm|avi)$/);
+
+        if (!isVideo) {
+          const img = new Image();
+          img.src = nextSrc;
+          console.log("預載下一張圖片:", nextSrc);
+        }
+      }
     }
     // 每次開啟貼文時呼叫此函式
     function updateBigPostArrows() {
@@ -596,5 +630,6 @@ I will be back.`,
         openPost(currentPostIdx + 1); // 切換到下一篇
       }
     };
+    setTimeout(preloadCurrentPostImages, 1000);
   }
 });
