@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 之前其實也做過個人網站但沒什麼內容好放，又或許加上之前其實有段時間想做軟體工程師，整個網站很順利地被做出來了。
 
-那不然可以介紹一下使用說明，方向鍵左右可以切貼文裡的照片，上下鍵可以分別控制前後一篇貼文(手機用戶抱歉，光響應式設計就用超久，在手機上能看就已經很好了🫠)。影片的話會自動播放但是會預設靜音，然後終於可以快轉了。
+那不然可以介紹一下使用說明，方向鍵左右可以切貼文裡的照片，上下鍵可以分別控制前後一篇貼文。手機用戶抱歉，光響應式設計就用超久，在手機上能看就已經很好了🫠，所以你會發現用手機看整個很亂。影片的話會自動播放但是會預設靜音，然後終於可以快轉了。
 
 🙏這邊要先鄭重道個歉🙏，貼文的照片和影片都需要加載時間，因為要顧全品質沒有壓縮，還請見諒。(我正努力加快速度了)
 
@@ -29,7 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 連結在這裡：https://weiqunc.github.io/Block/
       `,
-      photos: ["https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postI-1.jpg"],
+      photos: [
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postI-1.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postI-2.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postI-3.jpg",
+      ],
       size: "large",
       location: "臺灣",
     },
