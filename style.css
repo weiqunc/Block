@@ -506,7 +506,7 @@ footer a {
   }
 
   p.myname {
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
 
   div.name h2 {
@@ -528,10 +528,10 @@ footer a {
   }
 
   p.selfintro {
-    top: 150px !important;
-    width: 100%;
+    top: 120px !important;
+    width: 120%;
     font-size: 14px !important;
-    transform: translateX(-100px);
+    transform: translateX(-110px);
   }
   div.name {
     top: 170px;
@@ -542,7 +542,7 @@ footer a {
   }
 
   div.PictureFrame img {
-    width: 70% !important;
+    width: 68% !important;
     top: 100px !important;
     left: 60px !important;
     margin-right: 0px !important;
@@ -727,10 +727,9 @@ footer a {
     position: fixed;
     left: 55px;
     top: 18px;
-    font-size: 14px;
+    font-size: 0px;
     color: white;
-    z-index: 1001;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    z-index: 0;
   }
 
   div.postname {
