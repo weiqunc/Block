@@ -458,21 +458,6 @@ I will be back.`,
   const prevBtn = document.getElementById("prevPostBtn");
   const nextBtn = document.getElementById("nextPostBtn");
 
-  function preloadCurrentPostImages() {
-    const post = posts[currentPostIdx];
-
-    post.photos.forEach((src, index) => {
-      // 跳過第一張（已經載入）和影片
-      if (index === 0) return;
-
-      const isVideo = src.toLowerCase().match(/\.(mp4|mov|webm|avi)$/);
-      if (!isVideo) {
-        const img = new Image();
-        img.src = src;
-      }
-    });
-  }
-
   function openPost(idx) {
     currentPostIdx = idx;
     const post = posts[idx];
@@ -580,16 +565,39 @@ I will be back.`,
 
     document.onkeydown = function (e) {
       if (modal.style.display === "block") {
+        // 左右方向鍵：切換圖片
         if (e.key === "ArrowLeft" && current > 0) {
+          e.preventDefault();
           current--;
           updateSlider();
         }
         if (e.key === "ArrowRight" && current < slides.length - 1) {
+          e.preventDefault();
           current++;
           updateSlider();
         }
+
+        // 上下方向鍵：切換貼文
+        if (e.key === "ArrowUp") {
+          e.preventDefault(); // 防止頁面滾動
+          if (currentPostIdx > 0) {
+            openPost(currentPostIdx - 1); // 上一篇貼文
+          }
+        }
+        if (e.key === "ArrowDown") {
+          e.preventDefault(); // 防止頁面滾動
+          if (currentPostIdx < posts.length - 1) {
+            openPost(currentPostIdx + 1); // 下一篇貼文
+          }
+        }
+
+        // ESC 鍵：關閉彈窗
+        if (e.key === "Escape") {
+          closeModal();
+        }
       }
     };
+
     function updateSlider() {
       slides.forEach((el, i) => {
         const isActive = i === current;
