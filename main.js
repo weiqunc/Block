@@ -707,6 +707,61 @@ I will be back.`,
       }
     }
   }
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+    return false;
+  });
+  function protectImages() {
+    const allImages = document.querySelectorAll("img");
+    allImages.forEach((img) => {
+      // 禁用拖拽
+      img.addEventListener("dragstart", function (e) {
+        e.preventDefault();
+        return false;
+      });
+
+      // 禁用右鍵
+      img.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+        return false;
+      });
+
+      // 添加選取保護
+      img.style.webkitUserSelect = "none";
+      img.style.mozUserSelect = "none";
+      img.style.msUserSelect = "none";
+      img.style.userSelect = "none";
+      img.style.webkitUserDrag = "none";
+      img.style.mozUserDrag = "none";
+      img.style.userDrag = "none";
+    });
+  }
+
+  // 初始保護
+  protectImages();
+
+  // 在開啟貼文時也要保護新載入的圖片
+  const originalOpenPost = openPost;
+  window.openPost = function (idx) {
+    originalOpenPost(idx);
+    // 延遲保護新載入的圖片
+    setTimeout(protectImages, 100);
+  };
+
+  // 3. 禁用鍵盤快捷鍵
+  document.addEventListener("keydown", function (e) {
+    // 禁用開發者工具快捷鍵
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && e.key === "I") ||
+      (e.ctrlKey && e.shiftKey && e.key === "C") ||
+      (e.ctrlKey && e.key === "u") ||
+      (e.ctrlKey && e.key === "s")
+    ) {
+      e.preventDefault();
+      return false;
+    }
+  });
 });
 // 改進的預載函數
 function preloadImages() {
