@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 之前其實也做過個人網站但沒什麼內容好放，又或許加上之前其實有段時間想做軟體工程師，整個網站很順利地被做出來了。
 
-那不然可以介紹一下使用說明，方向鍵左右可以切貼文裡的照片(手機用戶抱歉，光響應式設計就用超久，在手機上能看就已經很好了🫠)，A和D可以分別控制前後一篇貼文。影片的話會自動播放但是會預設靜音，然後終於可以快轉了。
+那不然可以介紹一下使用說明，方向鍵左右可以切貼文裡的照片，上下鍵可以分別控制前後一篇貼文(手機用戶抱歉，光響應式設計就用超久，在手機上能看就已經很好了🫠)。影片的話會自動播放但是會預設靜音，然後終於可以快轉了。
 
 🙏這邊要先鄭重道個歉🙏，貼文的照片和影片都需要加載時間，因為要顧全品質沒有壓縮，還請見諒。(我正努力加快速度了)
 
@@ -546,6 +546,24 @@ I will be back.`,
     updateSlider();
     updateBigPostArrows();
 
+    // 添加滾動監聽 - 讓圖片隨滾動向上移動
+    const isMobile = window.innerWidth <= 480;
+
+    if (isMobile) {
+      // 小螢幕：重置整個模態框的滾動
+      setTimeout(() => {
+        modalBox.scrollTop = 0;
+      }, 100);
+    } else {
+      // 大螢幕：保持原有行為
+      const textArea = document.querySelector(".post-text-area");
+      if (textArea) {
+        setTimeout(() => {
+          textArea.scrollTop = 0;
+        }, 100);
+      }
+    }
+
     // 箭頭事件
     modalSlider.querySelector(".prev").onclick = function () {
       if (current > 0) {
@@ -658,6 +676,165 @@ I will be back.`,
         openPost(currentPostIdx + 1); // 切換到下一篇
       }
     };
-    setTimeout(preloadCurrentPostImages, 1000);
+
+    if (isMobile) {
+      // 小螢幕：重置統一滾動容器
+      const contentWrapper = document.querySelector(".content-wrapper");
+      if (contentWrapper) {
+        setTimeout(() => {
+          contentWrapper.scrollTop = 0;
+        }, 100);
+      }
+    } else {
+      // 大螢幕：重置文字區域滾動
+      const textArea = document.querySelector(".post-text-area");
+      if (textArea) {
+        setTimeout(() => {
+          textArea.scrollTop = 0;
+        }, 100);
+      }
+    }
   }
+});
+// 改進的預載函數
+function preloadImages() {
+  posts.forEach((post, postIndex) => {
+    post.photos.forEach((src, imageIndex) => {
+      // 跳過影片
+      if (!src.toLowerCase().match(/\.(mp4|mov|webm|avi)$/)) {
+        const img = new Image();
+        img.src = src;
+        // 預載首圖優先
+        if (imageIndex === 0) {
+          img.loading = "eager";
+        }
+      }
+    });
+  });
+}
+
+// 在 DOMContentLoaded 中調用
+document.addEventListener("DOMContentLoaded", function () {
+  // 延遲預載非關鍵圖片
+  setTimeout(preloadImages, 2000);
+});
+
+// 在現有的 JavaScript 最後添加這些功能
+
+// 檢測螢幕尺寸並調整
+function adjustForScreenSize() {
+  const modalBox = document.getElementById("modalContentBox");
+
+  if (isMobile && modalBox) {
+    // 手機版特殊處理
+    modalBox.style.margin = "2% auto";
+    modalBox.style.maxHeight = "95vh";
+  }
+}
+
+// 觸控滑動支援
+// 改善觸控滑動邏輯
+let touchStartX = 0;
+let touchStartY = 0;
+let touchStartTime = 0;
+
+document.addEventListener(
+  "touchstart",
+  function (e) {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    touchStartTime = Date.now();
+  },
+  { passive: true }
+);
+
+document.addEventListener(
+  "touchend",
+  function (e) {
+    if (modal.style.display !== "block") return;
+
+    const touchEndX = e.changedTouches[0].clientX;
+    const touchEndY = e.changedTouches[0].clientY;
+    const touchEndTime = Date.now();
+
+    const deltaX = touchStartX - touchEndX;
+    const deltaY = touchStartY - touchEndY;
+    const deltaTime = touchEndTime - touchStartTime;
+
+    // 只處理快速滑動（避免與滾動衝突）
+    if (deltaTime < 300) {
+      const slider = document.querySelector(".slider");
+      const rect = slider.getBoundingClientRect();
+      const touchInSlider =
+        touchStartY >= rect.top && touchStartY <= rect.bottom;
+
+      if (touchInSlider) {
+        // 水平滑動切換圖片
+        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+          if (deltaX > 0 && current < slides.length - 1) {
+            current++;
+            updateSlider();
+          } else if (deltaX < 0 && current > 0) {
+            current--;
+            updateSlider();
+          }
+        }
+      }
+    }
+  },
+  { passive: true }
+);
+
+// 視窗大小改變時重新調整
+window.addEventListener("resize", function () {
+  adjustForScreenSize();
+});
+
+// 頁面載入時初始化
+document.addEventListener("DOMContentLoaded", function () {
+  adjustForScreenSize();
+  // ... 你原有的 DOMContentLoaded 代碼
+});
+
+// 修改觸控滑動邏輯，適應新的垂直布局
+document.addEventListener("touchstart", function (e) {
+  startX = e.touches[0].clientX;
+  startY = e.touches[0].clientY;
+});
+
+document.addEventListener("touchend", function (e) {
+  if (modal.style.display !== "block") return;
+
+  const endX = e.changedTouches[0].clientX;
+  const endY = e.changedTouches[0].clientY;
+  const diffX = startX - endX;
+  const diffY = startY - endY;
+
+  // 檢查觸控是否在圖片區域
+  const slider = document.querySelector(".slider");
+  const rect = slider.getBoundingClientRect();
+  const touchInSlider = startY >= rect.top && startY <= rect.bottom;
+
+  if (touchInSlider) {
+    // 在圖片區域的水平滑動 - 切換圖片
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+      if (diffX > 0 && current < slides.length - 1) {
+        current++;
+        updateSlider();
+      } else if (diffX < 0 && current > 0) {
+        current--;
+        updateSlider();
+      }
+    }
+
+    // 在圖片區域的垂直滑動 - 切換貼文
+    if (Math.abs(diffY) > Math.abs(diffX) && Math.abs(diffY) > 100) {
+      if (diffY > 0 && currentPostIdx < posts.length - 1) {
+        openPost(currentPostIdx + 1);
+      } else if (diffY < 0 && currentPostIdx > 0) {
+        openPost(currentPostIdx - 1);
+      }
+    }
+  }
+  // 在文字區域的滑動由瀏覽器原生處理（滾動文字）
 });

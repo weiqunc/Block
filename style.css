@@ -443,6 +443,9 @@ pre.modalContent {
   background: #333;
   opacity: 1;
 }
+.content-wrapper {
+  display: contents; /* 大螢幕時透明，不影響布局 */
+}
 
 @media (max-width: 700px) {
   .side-layout {
@@ -480,47 +483,336 @@ footer a {
   color: #ffffff;
 }
 
-/* 響應式設計 */
-@media screen and (max-width: 768px) {
-  header ul {
-    display: none;
+/* 基本響應式斷點 */
+@media screen and (max-width: 1200px) {
+  /* 大螢幕到中等螢幕的過渡 */
+  .modal-content.side-layout {
+    width: 85vw;
   }
+
+  .modal-content.side-layout.large {
+    width: 90%;
+  }
+
+  .modal-content.side-layout.small {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* 手機小螢幕 */
   header h3 {
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 14px;
   }
-  .title {
-    flex-direction: column;
-    justify-content: center;
+
+  p.myname {
+    font-size: 25px !important;
+  }
+
+  div.name h2 {
+    font-size: 18px;
+  }
+
+  section.title {
+    height: 600px !important;
+    width: 100% !important;
+  }
+
+  section.intro {
+    height: 3600px !important;
+  }
+
+  div.intro {
+    /* display: flex; */
+    width: 100%;
+  }
+
+  p.selfintro {
+    top: 150px !important;
+    width: 100%;
+    font-size: 14px !important;
+    transform: translateX(-100px);
   }
   div.name {
-    top: 100px;
+    top: 170px;
     position: relative;
-    width: 100%;
+    width: 90%;
     text-align: center;
     z-index: 1;
   }
+
+  div.PictureFrame img {
+    width: 70% !important;
+    top: 100px !important;
+    left: 60px !important;
+    margin-right: 0px !important;
+  }
+
   div.PictureFrame {
-    top: 85px;
-    height: 600px;
-    width: 50%;
+    top: 20px;
+    position: relative;
+    width: 300px;
+    height: 400px;
+  }
+
+  .cover-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  section.river {
+    margin: 0 30px 60px 30px !important;
+  }
+
+  p.helloword {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .post-text-area {
+    padding: 12px;
+    max-height: 35vh;
+  }
+
+  #modalContent {
+    font-size: 11px !important;
+    line-height: 18px !important;
+  }
+
+  div.boxs {
+    width: 28px;
+    height: 28px;
+  }
+
+  p.onthepost1 {
+    left: 50px;
+    font-size: 13px;
+  }
+
+  .big-post-arrow {
+    width: 28px;
+    height: 28px;
+  }
+
+  .prev-post-arrow {
+    left: 10px;
+  }
+
+  .next-post-arrow {
+    right: 10px;
+  }
+
+  footer a {
+    font-size: 11px;
+    left: 5%;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  header h3 {
     left: 50%;
     transform: translateX(-50%);
-    position: relative;
+    font-size: 16px;
   }
 
   .menu {
     display: block;
     background-color: transparent;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 24px;
     position: absolute;
     left: 15px;
-    top: 4px;
+    top: 13px;
     border: none;
     cursor: pointer;
   }
+
+  .gallery {
+    margin-top: 20px;
+    gap: 12px;
+  }
+
+  .addtext {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .cover-img {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 15px;
+  }
+
+  div.blocktext {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  p.helloword {
+    height: auto;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  p.date {
+    font-size: 13px;
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .side-layout {
+    display: block;
+    flex-direction: column; /* 改為垂直堆疊 */
+    align-items: stretch;
+    width: 100%;
+    height: 95vh;
+    overflow-y: auto; /* 整個容器可滾動 */
+    overflow-x: hidden;
+    padding: 0;
+    position: relative;
+  }
+
+  .unified-content {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  .content-wrapper {
+    display: block;
+    min-height: 100%;
+    position: relative;
+    overflow-y: auto; /* 確保內容可滾動 */
+  }
+  .slider {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    margin-bottom: 0; /* 確保無間隙 */
+  }
+
+  .post-text-area {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 0;
+    height: auto;
+    max-height: none;
+    min-height: 60vh; /* 確保有足夠內容觸發滾動 */
+    overflow: visible; /* 允許內容自然流動 */
+  }
+  div.boxs {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    width: 0px;
+    height: 0px;
+    z-index: 0;
+    border: 0px solid rgba(255, 255, 255, 0.8);
+  }
+
+  p.onthepost1 {
+    position: fixed;
+    left: 55px;
+    top: 18px;
+    font-size: 14px;
+    color: white;
+    z-index: 1001;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  }
+
+  div.postname {
+    display: none;
+  }
+
+  p.modal-location-large,
+  p.modal-location-small {
+    position: fixed;
+    right: 20px;
+    top: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    color: white;
+    z-index: 1001;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4px 8px;
+    border-radius: 12px;
+  }
+
+  #modalContent {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+
+  .big-post-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .prev-post-arrow {
+    left: 15px;
+  }
+
+  .next-post-arrow {
+    right: 15px;
+  }
+
   footer a {
-    left: 30%;
+    left: 10%;
+    font-size: 12px;
+  }
+  .close {
+    position: fixed;
+    right: 12px;
+    top: 12px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    z-index: 1002;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
   }
 }
+
+/* 橫向手機 */
+/* @media screen and (max-width: 768px) and (orientation: landscape) {
+  .side-layout {
+    flex-direction: row;
+    height: 90vh;
+  }
+
+  .slider {
+    height: 100%;
+    width: 60%;
+  }
+
+  .post-text-area {
+    width: 40%;
+    height: 100%;
+    max-height: none;
+  }
+} */
+
+/* 超大螢幕優化 */
+/* @media screen and (min-width: 1600px) {
+  .modal-content.side-layout {
+    max-width: 1400px;
+  }
+
+  .modal-content.side-layout.large {
+    max-width: 1600px;
+  }
+} */

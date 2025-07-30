@@ -31,13 +31,13 @@
                 <img src="IntroPic.jpg" alt="個人照" style="width: 172.8px ;margin-right: 70px; top: 35%; position:relative">
           </div>
             <div class="name">
-                <p style="font-family: 微軟正黑體; font-size: 30px;">
+                <p style="font-family: 微軟正黑體; font-size: 30px;" class="myname">
                     陳偉群 wn_10.17_                
                 </p>
                 <h2 style="top: 20px; position: relative;">
                     NTU Math
                 </h2>
-                <p style="top: 50px; position: relative; font-family: 微軟正黑體; color: #363636; line-height: 30px;">
+                <p style="top: 50px; position: relative; font-family: 微軟正黑體; color: #363636; line-height: 30px;" class="selfintro">
                   因為實在受不了meta對照片的摧殘，這個網站是我製作來代替Instegram的。<br>
                   網站大部分設計都參考自Instegram的排版。<br>
                   如果有任何問題，歡迎聯絡我。<br>
@@ -145,13 +145,13 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
 <div id="postModal" class="modal">
   <div class="modal-content side-layout" id="modalContentBox">
     <span class="close">&times;</span>
-    <div class="slider post-image-area" id="modalSlider">
-      <button class="arrow prev" aria-label="上一張"><span class="arrow-shape left"></span></button>
-      <img src="" class="post-image" id="modalImage" alt="" />
-      <button class="arrow next" aria-label="下一張"><span class="arrow-shape right"></span></button>
-    <div class="indicators" id="modalIndicators"><!-- JS 會自動產生點 -->
-    </div>
-    </div>
+    <div class="content-wrapper" id="contentWrapper">
+      <div class="slider post-image-area" id="modalSlider">
+        <button class="arrow prev" aria-label="上一張"><span class="arrow-shape left"></span></button>
+        <img src="" class="post-image" id="modalImage" alt="" />
+        <button class="arrow next" aria-label="下一張"><span class="arrow-shape right"></span></button>
+        <div class="indicators" id="modalIndicators"></div>
+      </div>
     <div class="boxs"> </div>
     <p class="onthepost1">
         wn_10.17_
