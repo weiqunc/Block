@@ -441,7 +441,7 @@ I will be back.`,
 
 不過因為功能還稱不上是可玩，所以先不放上連結了。
       `,
-      photos: ["spC-1.jpg", "spC-2.jpg"],
+      photos: ["https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spC-1.jpg", "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spC-2.jpg"],
       size: "large",
       location: "臺灣",
     },
