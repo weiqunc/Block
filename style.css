@@ -5,6 +5,27 @@
   background: #000 !important;
   color: #fff !important; */
 }
+
+.page {
+  display: none;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+.page.active {
+  display: block;
+  animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 img {
   -webkit-touch-callout: none;
   -webkit-user-select: none;

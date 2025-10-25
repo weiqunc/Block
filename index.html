@@ -18,12 +18,14 @@
         <button class="menu">&#9776;</button>
 		<nav>
 			<ul><center>
-				<li><a href="#HOME">HOME</li></a>
-				<li><a href="#POST">POST</li></a>
+				<li><a href="#HOME" data-page="HOME">HOME</li></a>
+				<li><a href="#POST" data-page="HOME">POST</li></a>
+        <li><a href="#SIDE_PROJECT" data-page="SIDE_PROJECT">SIDE PROJECT</li></a>
 				<li><a href="#CONTACT">CONTACT</a></li></a>
 			</center></ul>
 		</nav>
 	</header>
+  <div id="HOME" class="page active">
     <main>
         <section style="height: 500px;" id="HOME" class="title" >
           <div class="intro">
@@ -50,7 +52,7 @@
 
         </section>
         <section style="height: 1700px; " class="intro">
-          <div class="gallery" data-gallery="gallery1">
+          <div class="gallery" data-gallery="home-gallery">
             <div class="addtext">
               <img src="postI-1.jpg" class="cover-img" alt="貼文" data-index="0"/>
             <div class="blocktext">
@@ -137,7 +139,47 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
             </div>
             </div>
             </div>
-            
+</div>
+
+<div id="SIDE_PROJECT" class="page">
+        <section style="height: 500px;" id="HOME" class="title" >
+          <div class="intro">
+          <div class="PictureFrame">
+                <img src="IntroPic2.jpg" alt="個人照" style="width: 172.8px ;margin-right: 70px; top: 40%; position:relative">
+          </div>
+            <div class="name">
+                <p style="font-family: 微軟正黑體; font-size: 30px;" class="myname">
+                    陳偉群                 
+                </p>
+                <h2 style="top: 20px; position: relative;">
+                    Amateur
+                </h2>
+                <p style="top: 50px; position: relative; font-family: 微軟正黑體; color: #363636; line-height: 30px;" class="selfintro">
+                  這裡是我隨便做的一些東西。(順便練習子網站怎麼做)<br>
+                  因為大部分的東西都還在製作中，而且純粹是自娛自樂，所以存在很多問題請見諒。<br>
+                  如果有任何問題，歡迎聯絡我。<br>
+                  Instagram : <a href="https://www.instagram.com/wn_10.17_/" style="color:#363636;">wn_10.17_</a> &nbsp Facebook : <a href="https://www.facebook.com/profile.php?id=100022073732968" style="color:#363636;">陳偉群</a> &nbsp Email : <a href="mailto:weiqunc493@gmail.com" style="color:#363636;">weiqunc493@gmail.com</a> 
+                </p>
+            </div>
+          </div>
+        </section>
+        <section style="height: 10px;  border-top: 1px solid #ccc; margin: 0 100px 60px 100px;"id="POST" class="river"></section>
+                <section style="height: 1700px; " class="intro">
+          <div class="gallery" data-gallery="project-gallery">
+            <div class="addtext">
+              <img src="spC-1.jpg" class="cover-img" alt="貼文" data-index="0"/>
+            <div class="blocktext">
+              <p class="helloword">
+                “Texas hold 'em”<br> <br>這是一個用 Google sheet 寫的德州撲克，<br>對，沒錯，就是那個 Google sheet。<br>
+              </p>
+              <p class="date">
+                work in progress
+              </p>
+            </div>
+            </div>
+          </div>
+          </section>
+</div>
 
 
 
@@ -165,13 +207,14 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
     </div>
   </div>
 </div>
+</div>
             
-        </section>
+    </section>
     </main>
-    <footer style="height: 100px; " id="CONTACT" class="contact">
+  <footer style="height: 100px; " id="CONTACT" class="contact">
         <a href="https://www.instagram.com/wn_10.17_/">Instagram : wn_10.17_</a> &nbsp;
         <a href="https://www.facebook.com/profile.php?id=100022073732968">Facebook : 陳偉群</a>
-    </footer>
+  </footer>
 
 <script src="main.js"></script>
 </body>

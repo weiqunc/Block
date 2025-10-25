@@ -426,6 +426,29 @@ I will be back.`,
       location: "國立臺灣科學教育館",
     },
   ];
+  const SideProjects = [
+    {
+      title: "",
+      content: `"Texas hold 'em"
+
+這是一個用 Google sheet 寫的德州撲克，
+
+對，沒錯，就是那個 Google sheet，
+
+回想起來還真是說來話長。
+
+本來就只是想做一個德州撲克遊戲，沒想到竟然做了這麼久。
+
+不過因為功能還稱不上是可玩，所以先不放上連結了。
+      `,
+      photos: ["spC-1.jpg", "spC-2.jpg"],
+      size: "large",
+      location: "臺灣",
+    },
+  ];
+
+  let currentPageData = posts; // 預設使用 posts
+  let currentDataType = "posts"; // 追蹤當前數據類型
 
   let current = 0,
     slides = [];
@@ -464,7 +487,10 @@ I will be back.`,
 
   function openPost(idx) {
     currentPostIdx = idx;
-    const post = posts[idx];
+    const post = currentPageData[idx]; // 使用當前頁面的數據
+
+    if (!post) return; // 如果沒有對應的貼文，直接返回
+
     const modalBox = document.getElementById("modalContentBox");
 
     // 控制大小
@@ -762,23 +788,124 @@ I will be back.`,
       return false;
     }
   });
-});
-// 改進的預載函數
-function preloadImages() {
-  posts.forEach((post, postIndex) => {
-    post.photos.forEach((src, imageIndex) => {
-      // 跳過影片
-      if (!src.toLowerCase().match(/\.(mp4|mov|webm|avi)$/)) {
-        const img = new Image();
-        img.src = src;
-        // 預載首圖優先
-        if (imageIndex === 0) {
-          img.loading = "eager";
+
+  // 改進的預載函數
+  function preloadImages() {
+    posts.forEach((post, postIndex) => {
+      post.photos.forEach((src, imageIndex) => {
+        // 跳過影片
+        if (!src.toLowerCase().match(/\.(mp4|mov|webm|avi)$/)) {
+          const img = new Image();
+          img.src = src;
+          // 預載首圖優先
+          if (imageIndex === 0) {
+            img.loading = "eager";
+          }
         }
+      });
+    });
+  }
+  const navLinks = document.querySelectorAll("nav a[data-page]");
+  const pages = document.querySelectorAll(".page");
+
+  // 頁面切換函數
+  function showPage(targetPage) {
+    // 隱藏所有頁面
+    pages.forEach((page) => {
+      page.classList.remove("active");
+    });
+
+    // 顯示目標頁面
+    const targetElement = document.getElementById(targetPage);
+    if (targetElement) {
+      targetElement.classList.add("active");
+    }
+
+    // 更新導航狀態
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.dataset.page === targetPage) {
+        link.classList.add("active");
       }
     });
+
+    updateDataSource(targetPage);
+
+    // 更新網址而不重新載入頁面
+    history.pushState({ page: targetPage }, "", `#${targetPage}`);
+  }
+
+  // 綁定導航點擊事件
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetPage = this.dataset.page;
+      showPage(targetPage);
+    });
   });
-}
+
+  // 處理瀏覽器前進/後退按鈕
+  window.addEventListener("popstate", function (e) {
+    if (e.state && e.state.page) {
+      showPage(e.state.page);
+    } else {
+      // 根據網址決定顯示哪個頁面
+      const hash = window.location.hash.substring(1);
+      const page = hash || "home";
+      showPage(page);
+    }
+  });
+
+  // 初始化：根據網址顯示對應頁面
+  const initialPage = window.location.hash.substring(1) || "HOME";
+  showPage(initialPage);
+
+  function updateDataSource(page) {
+    switch (page) {
+      case "HOME":
+        currentPageData = posts;
+        currentDataType = "posts";
+        updatePageImages("home");
+        break;
+      case "SIDE_PROJECT": // 假設你的專案頁面叫 projects
+        currentPageData = SideProjects;
+        currentDataType = "sideprojects";
+        updatePageImages("project");
+        break;
+      default:
+        currentPageData = posts;
+        currentDataType = "posts";
+        updatePageImages("home");
+    }
+  }
+
+  // 更新頁面圖片
+  function updatePageImages(pageType) {
+    let coverImages;
+
+    if (pageType === "home") {
+      coverImages = document.querySelectorAll(".home-cover-img");
+    } else if (pageType === "project") {
+      coverImages = document.querySelectorAll(".project-cover-img");
+    }
+
+    if (coverImages) {
+      coverImages.forEach((img, index) => {
+        if (currentPageData[index] && currentPageData[index].photos[0]) {
+          img.src = currentPageData[index].photos[0];
+          img.setAttribute("data-index", index);
+
+          // 移除舊的事件監聽器並添加新的
+          img.onclick = function () {
+            openPost(Number(this.getAttribute("data-index")));
+          };
+        } else {
+          img.style.display = "none";
+        }
+      });
+    }
+  }
+});
 
 // 在 DOMContentLoaded 中調用
 document.addEventListener("DOMContentLoaded", function () {
