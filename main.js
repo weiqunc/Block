@@ -76,14 +76,14 @@ Verse 還同時支援手機和電腦螢幕（終於）。當然如果你用下�
 連結在這裡：https://weiqunc.github.io/Verse/
       `,
       photos: [
-        "postJ-1.jpg",
-        "postJ-2.jpg",
-        "postJ-3.jpg",
-        "postJ-4.jpg",
-        "postJ-5.jpg",
-        "postJ-6.jpg",
-        "postJ-7.jpg",
-        "postJ-8.jpg"
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-1.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-2.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-3.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-4.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-5.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-6.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-7.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-8.jpg"
       ],
       size: "large",
       location: "臺灣"
