@@ -7,6 +7,89 @@ document.addEventListener("DOMContentLoaded", function () {
   const posts = [
     {
       title: "",
+      content: `“我又做了自己的 Spoti...？” 
+
+最近有點玩到失心瘋了，根本就在不務正業。繼上次做了Instagram ，對於 Vibe coding 的信心程度又大增了。為了讓這個技能能夠大顯身手，我又做了一個新的網站。
+
+不過，這當然不是為了衝經驗值而做的又一個無聊專案，但是先讓我解釋一下這個網站在做什麼：
+
+1. 這不是一個音樂網站
+
+某一天發現，其實我的生活中有很大一部分都在聽歌。聽歌的app這麼多，歌單也是建了又建，因為為我們總是想為某段情緒編一首曲。其中不乏有我們最愛的幾首音樂，然而離這些稍遠一點的，我們知道它存在，會聽，僅此而已。即使某一瞬是你最愛的歌。
+
+不想讓這些逐漸淡出視線的歌從此消失，同時，將曾經是自己喜愛的音樂好好收藏。這是 Verse 之所以在這裡的原因。
+
+2. 收藏每個生活的剪影
+
+除此之外，我相信大部分人都有過看到某句特別有感的話。有些句子就當作看過，默念一遍就當作自己記住了；有些句子恰好激發了開始記錄名言佳句的衝動，手機備忘錄便多了一條早已塵封的句子。
+
+所以，為了解決上面這些問題，我做了Verse。
+
+（對我知道那下面那個Instagram 真的沒什麼實際作用。）
+
+------------------------------------
+
+其實做Verse是真的挺好玩的，這是我第一次上架自己的伺服器，是第一次設計Logo，是第一次做了一個包含設計、實用體驗、後續維護的網站，也是第一次做了一個真的可以改變生活的東西。
+
+先來說說這個網站有什麼吧。首先最重要的就是歌曲列表，其中每一首歌可以進入詳細頁面，包含該首歌的歌詞。在詳細資訊的頁面中，有一個收藏歌詞歌詞的功能。只要在其中輸入該首歌的某一段歌詞，便會將資料傳給伺服器修改 Javascript 檔案，而在「剪影」中，便會出現你所收藏的所有歌詞。
+
+中英日韓和電腦有支援的語言都可以。
+
+除此之外，還有一個文章區，可以在其中記錄各種書籍的段落、詩篇、台詞或是朋友說過的話，並且同樣有收藏的功能。
+
+最後統計的部分，Verse裡有歌曲數量、歌手數量、文字數量，甚至每個歌手還有頁面在整理所有歌曲，可歌可泣。首頁裡還包含最新加入的歌曲和文字。
+
+最後最重要的，在網頁上加入新的歌曲或文章，歸功於線上伺服器，我們不再需要手動修改程式碼，只需要將新增歌曲的表單填完，幾乎同時，頁面上便會出現新的歌曲資訊了。
+
+Verse 還同時支援手機和電腦螢幕（終於）。當然如果你用下面的網址，是無法新增或刪除歌曲的，因為我沒有公開真正的伺服器網址。
+
+------------------------------------
+
+作為第一個可以遠程控制的網站，我對 Verse 還是挺滿意的。
+
+然而，我沒打算獨享成果。作為一個歌曲和文字收藏的網站，我當然是希望越多人可以使用是最好。
+
+然而一方面，其實我不確定功能這麼雞肋的網站有沒有人要用。一方面要是要製作可以讓更多人登入的網站，勢必需要更大的伺服器空間，隨之而來是更大的成本。
+
+所以呢我做了一個匿名表單： https://forms.gle/6LB4jo2C2ZT47DTn8
+（原本是要留言 +1 但這樣太白痴了）如果你想讓我知道又有一個人對這個有興趣的話，歡迎填寫這個表單。
+
+當然我會再研究一下到底實作上需要多少成本，不過如果要公開的話，還要改成登入制和資料庫就是了。
+
+最後，如果你是真的很想用，或許可以私訊我？現在使用的伺服器有流量限制，但如果單純花錢升級的話應該可以容納一些人使用，最後再攤掉升級的費用就好。
+
+還有如果共享的話，資料會有被我看到的風險喔（就像所有手機聽我們說話的那樣），可以自行匿名，但是如果會顧慮的話建議不要參與喔。
+（我會確保用完全匿名的方式，所以可以稍微放心）
+
+------------------------------------
+
+把不重要的事情說一說。
+1. 我使用的 AI 是 perplexity，幾乎完成了我8成以上的工作。要說我是協作者也不過分。
+2. 第一張照片的 LOGO，是我用 Goodnotes 畫的。
+3. 如果要說為什麽要取 Verse，除了看起來很帥以外，Verse 同時有主歌、詩、韻文和 one of the parts that a poem or song is divided into 
+（Form 劍橋字典）的意思。
+4. 有Verse沒有Chorus嗎？目前沒有，或許以後有機會？
+5. LOGO的設計理念，如果你覺得有點像特斯拉的話，你是對的。但是那個V真的是我畫的。
+
+------------------------------------
+
+連結在這裡：https://weiqunc.github.io/Verse/
+      `,
+      photos: [
+        "postJ-1.jpg",
+        "postJ-2.jpg",
+        "postJ-3.jpg",
+        "postJ-4.jpg",
+        "postJ-5.jpg",
+        "postJ-6.jpg",
+        "postJ-7.jpg",
+        "postJ-8.jpg"
+      ],
+      size: "large",
+      location: "臺灣"
+    },
+    {
+      title: "",
       content: `“我做了自己的 Instagram。” 
 
 事情是這樣的：因為實在受不了meta對照片的摧殘，加上IG之前對圖片大小霸道的整改，我決定自己做一個Instagram。
@@ -32,10 +115,10 @@ document.addEventListener("DOMContentLoaded", function () {
       photos: [
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postI-1.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postI-2.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postI-3.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postI-3.jpg"
       ],
       size: "large",
-      location: "臺灣",
+      location: "臺灣"
     },
     {
       title: "",
@@ -76,10 +159,10 @@ It means a lot to me.`,
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-17.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-18.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-19.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-20.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-20.jpg"
       ],
       size: "small",
-      location: "Tokyo Japan",
+      location: "Tokyo Japan"
     },
     {
       title: "",
@@ -214,10 +297,10 @@ It means a lot to me.`,
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-12.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-13.jpg",
         "https://media.githubusercontent.com/media/weiqunc/Block/main/postG-14.mp4",
-        "https://media.githubusercontent.com/media/weiqunc/Block/main/postG-15.mp4",
+        "https://media.githubusercontent.com/media/weiqunc/Block/main/postG-15.mp4"
       ],
       size: "large",
-      location: "彰化高中雨賢館",
+      location: "彰化高中雨賢館"
     },
     {
       title: "",
@@ -243,10 +326,10 @@ It means a lot to me.`,
 
 雖一路焦慮，從泰國到臺灣、從飯店到機場、從黑夜到白天，我仍然拿起手機，紀錄下我眼睛所見過的一切。即使路途不一定順遂，也不要忘了欣賞沿途的花草樹木、鳥語花香。雨過天晴，走過一切皆是風景。`,
       photos: [
-        "https://media.githubusercontent.com/media/weiqunc/Block/main/postF-1.mp4",
+        "https://media.githubusercontent.com/media/weiqunc/Block/main/postF-1.mp4"
       ],
       size: "small",
-      location: "曼谷,臺北",
+      location: "曼谷,臺北"
     },
     {
       title: "",
@@ -283,10 +366,10 @@ Now, I am back.`,
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-8.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-9.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-10.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-11.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-11.jpg"
       ],
       size: "large",
-      location: "國立臺灣科學教育館",
+      location: "國立臺灣科學教育館"
     },
     {
       title: "",
@@ -383,10 +466,10 @@ Now, I am back.`,
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-7.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-8.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-9.jpg",
-        "https://media.githubusercontent.com/media/weiqunc/Block/main/postD-10.mp4",
+        "https://media.githubusercontent.com/media/weiqunc/Block/main/postD-10.mp4"
       ],
       size: "large",
-      location: "彰化高中雨賢館",
+      location: "彰化高中雨賢館"
     },
     {
       title: "",
@@ -420,11 +503,11 @@ I will be back.`,
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-7.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-8.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-9.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-10.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-10.jpg"
       ],
       size: "small",
-      location: "國立臺灣科學教育館",
-    },
+      location: "國立臺灣科學教育館"
+    }
   ];
   const SideProjects = [
     {
@@ -441,10 +524,13 @@ I will be back.`,
 
 不過因為功能還稱不上是可玩，所以先不放上連結了。
       `,
-      photos: ["spC-1.jpg", "spC-2.jpg"],
+      photos: [
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spC-1.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spC-2.jpg"
+      ],
       size: "large",
-      location: "臺灣",
-    },
+      location: "臺灣"
+    }
   ];
 
   let currentPageData = posts; // 預設使用 posts
