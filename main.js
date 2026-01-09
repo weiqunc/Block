@@ -531,6 +531,23 @@ I will be back.`,
       ],
       size: "large",
       location: "臺灣"
+    },
+    {
+      title: "",
+      content: `Verse
+      `,
+      photos: [
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-1.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-2.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-3.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-4.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-5.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-6.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-7.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-8.jpg"
+      ],
+      size: "large",
+      location: "臺灣"
     }
   ];
 
@@ -950,9 +967,11 @@ I will be back.`,
   function updateDataSource(page) {
     switch (page) {
       case "HOME":
+        break;
+      case "POST":
         currentPageData = posts;
         currentDataType = "posts";
-        updatePageImages("home");
+        updatePageImages("post");
         break;
       case "SIDE_PROJECT": // 假設你的專案頁面叫 projects
         currentPageData = SideProjects;
@@ -962,7 +981,7 @@ I will be back.`,
       default:
         currentPageData = posts;
         currentDataType = "posts";
-        updatePageImages("home");
+        updatePageImages("post");
     }
   }
 
@@ -972,6 +991,9 @@ I will be back.`,
 
     if (pageType === "home") {
       coverImages = document.querySelectorAll(".home-cover-img");
+    }
+    if (pageType === "post") {
+      coverImages = document.querySelectorAll(".post-cover-img");
     } else if (pageType === "project") {
       coverImages = document.querySelectorAll(".project-cover-img");
     }
