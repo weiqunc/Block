@@ -513,22 +513,19 @@ I will be back.`,
   const SideProjects = [
     {
       title: "",
-      content: `"Texas hold 'em"
+      content: `2026.2.14 日誌
 
-這是一個用 Google sheet 寫的德州撲克，
+現階段已經把基礎功能做完了。包含替換定義過的名詞、標籤階級與查找功能。現在呢，只能算是能用，但根本不會想去用。可能原因是現在還在debug的階段，還不知道哪裡有錯。但會覺得使用上很不順暢的感覺。
 
-對，沒錯，就是那個 Google sheet，
+另一個大問題是，外觀上很不吸引人。雖然已經比我自己做還好看的多，但總覺得腦中有想像出一個「應該要那樣的背景」，但像描述又不知道怎麼描述。甚至不知道什麼是我想要的。但現在的外型實在拿不出手。
 
-回想起來還真是說來話長。
+還有一個問題是，我還有想像出一些功能，但現在根本不確定能不能實現，很想做多一點挑戰，但很怕這樣的跨度太大。雖然現版本算是有用到新的方法像動態的生成頁面ejs，和一些包含映射的關係，但並不是很大的技術突破。
 
-本來就只是想做一個德州撲克遊戲，沒想到竟然做了這麼久。
+感覺自己其實有點這方面的潔癖。最近也在思考做這些網站的意義。雖然意義這種東西常常是人自己附加的，不是事物本身具有的特質，但不妨礙人們追尋意義。「你為什麼要做這個東西？」這句的回答，常常主角不真的是那個事物，而是「你」。這大概是為什麼旁人會這麼認為吧。
 
-不過因為功能還稱不上是可玩，所以先不放上連結了。
+回到潔癖，總覺得很想超過過去的自己，明明他只是個高中生。現在其實會擔心自己會不會有一天感到疲倦。如果是說做網站，那肯定是會。但未來的我會想辦法吧，我是這樣認為的。
       `,
-      photos: [
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spC-1.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spC-2.jpg"
-      ],
+      photos: [],
       size: "large",
       location: "臺灣"
     },
@@ -545,6 +542,27 @@ I will be back.`,
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-6.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-7.jpg",
         "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-8.jpg"
+      ],
+      size: "large",
+      location: "臺灣"
+    },
+    {
+      title: "",
+      content: `"Texas hold 'em"
+
+這是一個用 Google sheet 寫的德州撲克，
+
+對，沒錯，就是那個 Google sheet，
+
+回想起來還真是說來話長。
+
+本來就只是想做一個德州撲克遊戲，沒想到竟然做了這麼久。
+
+不過因為功能還稱不上是可玩，所以先不放上連結了。
+      `,
+      photos: [
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spC-1.jpg",
+        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spC-2.jpg"
       ],
       size: "large",
       location: "臺灣"
