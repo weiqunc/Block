@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none'; base-uri 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Block</title>
 	<link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#313131">
+    <meta name="description" content="Wei-Chun Chen 的生活記錄、照片與 Side Projects。">
 </head>
 <body>
+  <a class="skip-link" href="#HOME">跳至內容</a>
+  <noscript><style>.page { display: block; padding-top: 24px; } header { position: static; height: auto; display: block; padding-top: 12px; } header nav { display: block; position: static; } header ul { flex-direction: row; flex-wrap: wrap; gap: 16px; } .menu { display: none; } .cover-img { cursor: default; } .noscript-note { padding: 16px 24px; }</style><p class="noscript-note">頁面導覽與首頁外連可正常使用；完整貼文與圖片輪播需要 JavaScript。</p></noscript>
      <button class="big-post-arrow prev-post-arrow" id="prevPostBtn" aria-label="上一篇" style="display:none;">
     <span class="big-arrow-shape left"></span>
   </button>
@@ -15,27 +22,27 @@
   </button>
 	<header>
 		<h3 style="text-align:center; color:rgb(255, 255, 255)"> Wei-Chun Chen </h3>
-        <button class="menu">&#9776;</button>
-		<nav>
-			<ul><center>
-				<li><a href="#HOME" data-page="HOME">HOME</li></a>
-				<li><a href="#POST" data-page="POST">POST</li></a>
-        <li><a href="#SIDE_PROJECT" data-page="SIDE_PROJECT">SIDE PROJECT</li></a>
-				<li><a href="#CONTACT">CONTACT</a></li></a>
-			</center></ul>
-		</nav>
+        <button class="menu" type="button" aria-label="開啟導覽" aria-expanded="false" aria-controls="siteNav">&#9776;</button>
+<nav id="siteNav" aria-label="主要導覽">
+      <ul>
+        <li><a href="#HOME" data-page="HOME">HOME</a></li>
+        <li><a href="#POST" data-page="POST">POST</a></li>
+        <li><a href="#SIDE_PROJECT" data-page="SIDE_PROJECT">SIDE PROJECT</a></li>
+        <li><a href="#CONTACT" data-page="CONTACT">CONTACT</a></li>
+      </ul>
+    </nav>
 	</header>
 
-  <div id = "HOME" class="page active">
+  <div id="HOME" class="page active">
     <main>
-        <section style="height: 500px;" id="HOME" class="title" >
+        <section style="height: 500px;" class="title" >
           <div class="intro">
           <div class="PictureFrame">
-                <img src="IntroPic.jpg" alt="個人照" style="width: 172.8px ;margin-right: 70px; top: 35%; position:relative">
+                <picture><source srcset="thumbnails/IntroPic.webp" type="image/webp"><img fetchpriority="high" decoding="async" width="400" height="560" src="IntroPic.jpg" alt="個人照" style="width: 172.8px ;margin-right: 70px; top: 35%; position:relative"></picture>
           </div>
             <div class="name">
                 <p style="font-family: 微軟正黑體; font-size: 30px;" class="myname">
-                    陳偉群          
+                    陳偉群
                 </p>
                 <h2 style="top: 20px; position: relative;">
                     Changhua,  Taiwan
@@ -44,23 +51,23 @@
                   Welcome!<br>
                   <br>
                   如果有任何問題，歡迎聯絡我。<br>
-                  Instagram : <a href="https://www.instagram.com/wn_10.17_/" target="_blank" style="color:#363636;">wn_10.17_</a> &nbsp Facebook : <a href="https://www.facebook.com/profile.php?id=100022073732968" target="_blank" style="color:#363636;">陳偉群</a> &nbsp Email : <a href="mailto:weiqunc493@gmail.com" target="_blank" style="color:#363636;">weiqunc493@gmail.com</a> 
+                  Instagram : <a href="https://www.instagram.com/wn_10.17_/" target="_blank" rel="noopener noreferrer" style="color:#363636;">wn_10.17_</a> &nbsp Facebook : <a href="https://www.facebook.com/profile.php?id=100022073732968" target="_blank" rel="noopener noreferrer" style="color:#363636;">陳偉群</a> &nbsp Email : <a href="mailto:weiqunc493@gmail.com" target="_blank" rel="noopener noreferrer" style="color:#363636;">weiqunc493@gmail.com</a>
                 </p>
             </div>
           </div>
         </section>
-         <section style="height: 10px;  border-top: 1px solid #ccc; margin: 0 100px 60px 100px;"id "HOME" class="river">
+         <section style="height: 10px;  border-top: 1px solid #ccc; margin: 0 100px 60px 100px;" class="river">
 
         </section>
         <section style="height: 800px; " class="intro">
           <div class="gallery" >
             <div class="addtext">
-              <a href="https://hackmd.io/@Wei493/HkYSCf3Gzl" target="_blank">
-              <img src="photo/20260705.jpg" class="home-cover-img" alt="貼文" data-index="0"/></a>
+              <a href="https://hackmd.io/@Wei493/HkYSCf3Gzl" target="_blank" rel="noopener noreferrer">
+              <picture><source srcset="thumbnails/photo-20260705.webp" type="image/webp"><img width="420" height="560" src="photo/20260705.jpg" class="home-cover-img" alt="貼文" data-index="0" loading="lazy" decoding="async"/></picture></a>
             <div class="blocktext">
               <h2 style="font-family: 微軟正黑體; font-weight: bold; color: #4c4c4c;">2026 Spring 修課心得</h2>
               <p class="home-helloword">
-                <a href="https://hackmd.io/@Wei493/rJ9jVssLZg" target="_blank" style="color:#363636;">https://hackmd.io/@Wei493/HkYSCf3Gzl</a>
+                <a href="https://hackmd.io/@Wei493/HkYSCf3Gzl" target="_blank" rel="noopener noreferrer" style="color:#363636;">https://hackmd.io/@Wei493/HkYSCf3Gzl</a>
                 <br>
                 <br>
                 ◀︎ 某天路過醉月湖鬼使神差拍的🌸
@@ -71,12 +78,12 @@
             </div>
             </div>
             <div class="addtext">
-              <a href="https://hackmd.io/@Wei493/rJ9jVssLZg" target="_blank">
-              <img src="photo/20260131.jpg" class="home-cover-img" alt="貼文" data-index="1"/></a>
+              <a href="https://hackmd.io/@Wei493/rJ9jVssLZg" target="_blank" rel="noopener noreferrer">
+              <picture><source srcset="thumbnails/photo-20260131.webp" type="image/webp"><img width="560" height="373" src="photo/20260131.jpg" class="home-cover-img" alt="貼文" data-index="1" loading="lazy" decoding="async"/></picture></a>
             <div class="blocktext">
               <h2 style="font-family: 微軟正黑體; font-weight: bold; color: #4c4c4c;">2026 彰友返服</h2>
               <p class="home-helloword">
-                <a href="https://hackmd.io/@Wei493/rJ9jVssLZg" target="_blank" style="color:#363636;">https://hackmd.io/@Wei493/rJ9jVssLZg</a>
+                <a href="https://hackmd.io/@Wei493/rJ9jVssLZg" target="_blank" rel="noopener noreferrer" style="color:#363636;">https://hackmd.io/@Wei493/rJ9jVssLZg</a>
                 <br>
                 <br>
                 ㄧ生推。
@@ -87,12 +94,12 @@
             </div>
             </div>
             <div class="addtext">
-              <a href="https://hackmd.io/@Wei493/BymJ2z2Vbe" target="_blank">
-              <img src="photo/20260109.jpg" class="home-cover-img" alt="貼文" data-index="2"/></a>
+              <a href="https://hackmd.io/@Wei493/BymJ2z2Vbe" target="_blank" rel="noopener noreferrer">
+              <picture><source srcset="thumbnails/photo-20260109.webp" type="image/webp"><img width="560" height="420" src="photo/20260109.jpg" class="home-cover-img" alt="貼文" data-index="2" loading="lazy" decoding="async"/></picture></a>
             <div class="blocktext">
               <h2 style="font-family: 微軟正黑體; font-weight: bold; color: #4c4c4c;">2025 Fall 修課心得</h2>
               <p class="home-helloword">
-                <a href="https://hackmd.io/@Wei493/BymJ2z2Vbe" target="_blank" style="color:#363636;">https://hackmd.io/@Wei493/BymJ2z2Vbe</a>
+                <a href="https://hackmd.io/@Wei493/BymJ2z2Vbe" target="_blank" rel="noopener noreferrer" style="color:#363636;">https://hackmd.io/@Wei493/BymJ2z2Vbe</a>
                 <br>
                 <br>
                 ◀︎ 這是已經倒掉的小福樓😢
@@ -108,16 +115,16 @@
 
   </div>
 
-  <div id="POST" class="page active">
+  <div id="POST" class="page">
     <main>
-        <section style="height: 500px;" id="POST" class="title" >
+        <section style="height: 500px;" class="title" >
           <div class="intro">
           <div class="PictureFrame">
-                <img src="IntroPic.jpg" alt="個人照" style="width: 172.8px ;margin-right: 70px; top: 35%; position:relative">
+                <picture><source srcset="thumbnails/IntroPic.webp" type="image/webp"><img fetchpriority="high" decoding="async" width="400" height="560" src="IntroPic.jpg" alt="個人照" style="width: 172.8px ;margin-right: 70px; top: 35%; position:relative"></picture>
           </div>
             <div class="name">
                 <p style="font-family: 微軟正黑體; font-size: 30px;" class="myname">
-                    陳偉群 wn_10.17_                
+                    陳偉群 wn_10.17_
                 </p>
                 <h2 style="top: 20px; position: relative;">
                     NTU Math B14
@@ -126,18 +133,18 @@
                   因為實在受不了meta對照片的摧殘，這個網站是我製作來代替Instegram的。<br>
                   網站大部分設計都參考自Instegram的排版。<br>
                   如果有任何問題，歡迎聯絡我。<br>
-                  Instagram : <a href="https://www.instagram.com/wn_10.17_/" target="_blank" style="color:#363636;">wn_10.17_</a> &nbsp Facebook : <a href="https://www.facebook.com/profile.php?id=100022073732968" style="color:#363636;">陳偉群</a> &nbsp Email : <a href="mailto:weiqunc493@gmail.com" target="_blank" style="color:#363636;">weiqunc493@gmail.com</a> 
+                  Instagram : <a href="https://www.instagram.com/wn_10.17_/" target="_blank" rel="noopener noreferrer" style="color:#363636;">wn_10.17_</a> &nbsp Facebook : <a href="https://www.facebook.com/profile.php?id=100022073732968" style="color:#363636;">陳偉群</a> &nbsp Email : <a href="mailto:weiqunc493@gmail.com" target="_blank" rel="noopener noreferrer" style="color:#363636;">weiqunc493@gmail.com</a>
                 </p>
             </div>
           </div>
         </section>
-        <section style="height: 10px;  border-top: 1px solid #ccc; margin: 0 100px 60px 100px;"id="POST" class="river">
+        <section style="height: 10px;  border-top: 1px solid #ccc; margin: 0 100px 60px 100px;" class="river">
 
         </section>
         <section style="height: 1930px; " class="intro">
           <div class="gallery" data-gallery="home-gallery">
             <div class="addtext">
-              <img src="postJ-1.jpg" class="cover-img" alt="貼文" data-index="0"/>
+              <picture><source srcset="thumbnails/postJ-1.webp" type="image/webp"><img width="560" height="422" src="postJ-1.jpg" class="cover-img" alt="貼文" data-index="0" loading="lazy" decoding="async"/></picture>
             <div class="blocktext">
               <p class="helloword">
                 “我又做了自己的 Spoti...？”<br> <br>最近有點玩到失心瘋了，根本就在不務正業。繼上次做了Instagram ，對於 Vibe coding 的信心程度又大增了。為了讓這個技能能夠大顯身手，我又做了一個新的網站。<br>不過，這當然不是為了衝經驗值而做的又一個無聊專案...
@@ -148,7 +155,7 @@
             </div>
             </div>
             <div class="addtext">
-              <img src="postI-1.jpg" class="cover-img" alt="貼文" data-index="1"/>
+              <picture><source srcset="thumbnails/postI-1.webp" type="image/webp"><img width="560" height="319" src="postI-1.jpg" class="cover-img" alt="貼文" data-index="1" loading="lazy" decoding="async"/></picture>
             <div class="blocktext">
               <p class="helloword">
                 “我做了自己的 Instagram。”<br> <br>事情是這樣的：因為實在受不了meta對照片的摧殘，加上IG之前對圖片大小霸道的整改，我決定自己做一個Instagram。<br>對，整件事情差不多就這樣。
@@ -160,7 +167,7 @@
             </div>
             </div>
             <div class="addtext">
-              <img src="postH-1.jpg" class="cover-img" alt="貼文" data-index="2"/>
+              <picture><source srcset="thumbnails/postH-1.webp" type="image/webp"><img width="560" height="434" src="postH-1.jpg" class="cover-img" alt="貼文" data-index="2" loading="lazy" decoding="async"/></picture>
             <div class="blocktext">
               <p class="helloword">
                 🌸Sakura Science Exchange Program🌸 <br> <br>感謝JST提供機會讓我參加這個活動。<br>七天的行程裡，來自馬來西亞、印度、烏克蘭、臺灣的我們，來到這個不同以往的地方。<br>雖然是第一次見面，我們仍然玩的開心、離別時會不捨，仍然期待下次會在哪裡遇見。
@@ -172,42 +179,42 @@
             </div>
             </div>
             <div class="addtext">
-              <img src="postG-1.jpg" class="cover-img" alt="貼文" data-index="3"/>
+              <picture><source srcset="thumbnails/postG-1.webp" type="image/webp"><img width="560" height="315" src="postG-1.jpg" class="cover-img" alt="貼文" data-index="3" loading="lazy" decoding="async"/></picture>
             <div class="blocktext">
               <p class="helloword">
                 “有些事一旦化為言語，反而會太過輕柔，隨風飛去。<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp不如像飄落的花瓣一般，一點一滴慢慢地傳達。”<br> <br>我在黑板寫下「青春」兩個字，久久不能釋懷。<br>青春是愛、勇氣、希望。
-                ...                
+                ...
               </p>
              <p class="date">
                 2025年6月5日
               </p>
             </div>
-            </div> 
+            </div>
             <div class="addtext">
-              <img src="postF-1.jpg" class="cover-img" alt="貼文" data-index="4"/>
+              <picture><source srcset="thumbnails/postF-1.webp" type="image/webp"><img width="313" height="560" src="postF-1.jpg" class="cover-img" alt="貼文" data-index="4" loading="lazy" decoding="async"/></picture>
             <div class="blocktext">
               <p class="helloword">
                 “雨過天晴，走過一切皆是風景“<br> <br>2月4日晚上9點半，從位於曼谷的飯店出發。算是臨時起意，我開始記錄下這趟11小時獨旅。<br>步行到捷運站，和這座短暫接觸的城市道別，接下來是一趟未知的旅程。照著先前規劃好的路線，買票、找路、等待，雖然忐忑，卻有些興奮。站在冷清的月台，期待只有我才知道的大事發生。
-                ...  
+                ...
               </p>
              <p class="date">
                 2025年2月6日
-              </p>              
+              </p>
             </div>
-            </div>  
+            </div>
             <div class="addtext">
-              <img src="postE-1.jpg" class="cover-img" alt="貼文" data-index="5"/>
+              <picture><source srcset="thumbnails/postE-1.webp" type="image/webp"><img width="391" height="560" src="postE-1.jpg" class="cover-img" alt="貼文" data-index="5" loading="lazy" decoding="async"/></picture>
             <div class="blocktext">
               <p class="helloword">
 “當抵達的那一刻，曾經的我就已功成身退了“<br><br>2025 TISF (Taiwan International Science Fair)，30個國家，174件作品，在科教館舉行。<br>隔了兩年，我又回到這個地方。和不太一樣的人，不太一樣心態。而我仍然很喜歡這裡的一切。<br>我很喜歡這裡的氛圍，我認識了一群對數學充滿熱忱的人，當中還有許多臺大數學的學長，甚...
               </p>
              <p class="date">
                 2025年1月26日
-              </p>              
+              </p>
             </div>
-            </div> 
+            </div>
             <div class="addtext">
-              <img src="postD-1.jpg" class="cover-img" alt="貼文" data-index="6"/>
+              <picture><source srcset="thumbnails/postD-1.webp" type="image/webp"><img width="560" height="420" src="postD-1.jpg" class="cover-img" alt="貼文" data-index="6" loading="lazy" decoding="async"/></picture>
             <div class="blocktext">
               <p class="helloword">
                 “感動 = 情境^投入”<br> <br>辦成發到底是為了什麼阿？這是我兩個月以來存在心中的疑問。在成發的企劃書上，我寫下<br>
@@ -216,11 +223,11 @@
               </p>
              <p class="date">
                 2024年8月31日
-              </p>              
+              </p>
             </div>
-            </div>                                                  
+            </div>
             <div class="addtext">
-             <img src="postC-1.jpg" class="cover-img" alt="貼文" data-index="7"/>
+             <picture><source srcset="thumbnails/postC-1.webp" type="image/webp"><img width="401" height="560" src="postC-1.jpg" class="cover-img" alt="貼文" data-index="7" loading="lazy" decoding="async"/></picture>
             <div class="blocktext">
               <p class="helloword">
 “真正熱愛才能體會的那種感動“ <br><br>2023 TISF (Taiwan International Science Fair)，集結21個國家，135件作品，在科教館盛大開幕。<br>
@@ -229,21 +236,24 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
               </p>
              <p class="date">
                 2023年2月10日
-              </p>              
+              </p>
             </div>
             </div>
             </div>
+        </section>
+    </main>
 </div>
 
 <div id="SIDE_PROJECT" class="page">
-        <section style="height: 500px;" id="HOME" class="title" >
+    <main>
+        <section style="height: 500px;" class="title" >
           <div class="intro">
           <div class="PictureFrame">
-                <img src="IntroPic2.jpg" alt="個人照" style="width: 172.8px ;margin-right: 70px; top: 40%; position:relative">
+                <picture><source srcset="thumbnails/IntroPic2.webp" type="image/webp"><img fetchpriority="high" decoding="async" width="560" height="405" src="IntroPic2.jpg" alt="個人照" style="width: 172.8px ;margin-right: 70px; top: 40%; position:relative"></picture>
           </div>
             <div class="name">
                 <p style="font-family: 微軟正黑體; font-size: 30px;" class="myname">
-                    陳偉群                 
+                    陳偉群
                 </p>
                 <h2 style="top: 20px; position: relative;">
                     Amateur
@@ -252,17 +262,17 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
                   這裡是我隨便做的一些東西。(順便練習子網站怎麼做)<br>
                   因為大部分的東西都還在製作中，而且純粹是自娛自樂，所以存在很多問題請見諒。<br>
                   如果有任何問題，歡迎聯絡我。<br>
-                  Instagram : <a href="https://www.instagram.com/wn_10.17_/" target="_blank" style="color:#363636;">wn_10.17_</a> &nbsp Facebook : <a href="https://www.facebook.com/profile.php?id=100022073732968" target="_blank" style="color:#363636;">陳偉群</a> &nbsp Email : <a href="mailto:weiqunc493@gmail.com" target="_blank" style="color:#363636;">weiqunc493@gmail.com</a> 
+                  Instagram : <a href="https://www.instagram.com/wn_10.17_/" target="_blank" rel="noopener noreferrer" style="color:#363636;">wn_10.17_</a> &nbsp Facebook : <a href="https://www.facebook.com/profile.php?id=100022073732968" target="_blank" rel="noopener noreferrer" style="color:#363636;">陳偉群</a> &nbsp Email : <a href="mailto:weiqunc493@gmail.com" target="_blank" rel="noopener noreferrer" style="color:#363636;">weiqunc493@gmail.com</a>
                 </p>
             </div>
           </div>
         </section>
-        
-        <section style="height: 10px;  border-top: 1px solid #ccc; margin: 0 100px 60px 100px;"id="POST" class="river"></section>
+
+        <section style="height: 10px;  border-top: 1px solid #ccc; margin: 0 100px 60px 100px;" class="river"></section>
           <section style="height: 600px; " class="intro">
           <div class="gallery" data-gallery="project-gallery">
             <!-- <div class="addtext">
-              <img src="spE-1.jpg" class="cover-img" alt="貼文" data-index="0"/>
+              <img src="spE-1.jpg" class="cover-img" alt="貼文" data-index="0" loading="lazy" decoding="async"/>
             <div class="blocktext">
               <p class="helloword">
                 “Verse”<br> <br>一個紀錄音樂的平台<br>對，沒錯，就是那個 Google sheet。<br>
@@ -273,7 +283,7 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
             </div>
             </div> -->
             <div class="addtext">
-              <img src="spD-1.jpg" class="cover-img" alt="貼文" data-index="1"/>
+              <picture><source srcset="thumbnails/spD-1.webp" type="image/webp"><img width="560" height="422" src="spD-1.jpg" class="cover-img" alt="貼文" data-index="1" loading="lazy" decoding="async"/></picture>
             <div class="blocktext">
               <p class="helloword">
                 “Verse”<br> <br>一個紀錄音樂的平台<br>
@@ -284,7 +294,7 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
             </div>
             </div>
             <div class="addtext">
-              <img src="spC-1.jpg" class="cover-img" alt="貼文" data-index="2"/>
+              <picture><source srcset="thumbnails/spC-1.webp" type="image/webp"><img width="560" height="247" src="spC-1.jpg" class="cover-img" alt="貼文" data-index="2" loading="lazy" decoding="async"/></picture>
             <div class="blocktext">
               <p class="helloword">
                 “Texas hold 'em”<br> <br>這是一個用 Google sheet 寫的德州撲克，<br>對，沒錯，就是那個 Google sheet。<br>
@@ -296,18 +306,19 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
             </div>
           </div>
           </section>
+    </main>
 </div>
 
 
 
 <!-- Modal 彈窗（含多張照片輪播） -->
-<div id="postModal" class="modal">
+<div id="postModal" class="modal" role="dialog" aria-modal="true" aria-label="貼文詳情" aria-hidden="true" tabindex="-1">
   <div class="modal-content side-layout" id="modalContentBox">
-    <span class="close">&times;</span>
+    <button class="close" type="button" aria-label="關閉貼文">&times;</button>
     <div class="content-wrapper" id="contentWrapper">
       <div class="slider post-image-area" id="modalSlider">
         <button class="arrow prev" aria-label="上一張"><span class="arrow-shape left"></span></button>
-        <img src="" class="post-image" id="modalImage" alt="" />
+
         <button class="arrow next" aria-label="下一張"><span class="arrow-shape right"></span></button>
         <div class="indicators" id="modalIndicators"></div>
       </div>
@@ -319,26 +330,30 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
     <div class="post-text-area">
 
       <div class="postname"></div>
+      <div class="share-tools">
+        <button id="copyPostLink" type="button">複製連結</button>
+        <span id="slideCount" aria-live="polite"></span>
+        <span id="shareStatus" role="status" aria-live="polite"></span>
+        <input id="shareFallback" type="text" readonly hidden aria-label="貼文連結">
+      </div>
+      <p class="keyboard-help">← → 切換圖片・↑ ↓ 切換貼文・Esc 關閉</p>
       <h2 id="modalTitle"></h2>
       <pre id="modalContent" style=" font-size: 13px; font-family: 微軟正黑體 ;text-align: left; z-index: 9; line-height: 25px;" ></pre>
     </div>
   </div>
 </div>
 </div>
-            
-    </section>
-    </main>
 
     <div id = "CONTACT" class="page">
     <main>
-        <section style="height: 500px;" id="HOME" class="title" >
+        <section style="height: 500px;" class="title" >
           <div class="intro">
           <div class="PictureFrame">
-                <img src="IntroPic.jpg" alt="個人照" style="width: 172.8px ;margin-right: 70px; top: 35%; position:relative">
+                <picture><source srcset="thumbnails/IntroPic.webp" type="image/webp"><img fetchpriority="high" decoding="async" width="400" height="560" src="IntroPic.jpg" alt="個人照" style="width: 172.8px ;margin-right: 70px; top: 35%; position:relative"></picture>
           </div>
             <div class="name">
                 <p style="font-family: 微軟正黑體; font-size: 30px;" class="myname">
-                    陳偉群          
+                    陳偉群
                 </p>
                 <h2 style="top: 20px; position: relative;">
                     NTU Math
@@ -347,12 +362,12 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
                   因為實在受不了meta對照片的摧殘，這個網站是我製作來代替Instegram的。<br>
                   網站大部分設計都參考自Instegram的排版。<br>
                   如果有任何問題，歡迎聯絡我。<br>
-                  Instagram : <a href="https://www.instagram.com/wn_10.17_/" target="_blank" style="color:#363636;">wn_10.17_</a> &nbsp Facebook : <a href="https://www.facebook.com/profile.php?id=100022073732968" target="_blank" style="color:#363636;">陳偉群</a> &nbsp Email : <a href="mailto:weiqunc493@gmail.com" target="_blank" style="color:#363636;">weiqunc493@gmail.com</a> 
+                  Instagram : <a href="https://www.instagram.com/wn_10.17_/" target="_blank" rel="noopener noreferrer" style="color:#363636;">wn_10.17_</a> &nbsp Facebook : <a href="https://www.facebook.com/profile.php?id=100022073732968" target="_blank" rel="noopener noreferrer" style="color:#363636;">陳偉群</a> &nbsp Email : <a href="mailto:weiqunc493@gmail.com" target="_blank" rel="noopener noreferrer" style="color:#363636;">weiqunc493@gmail.com</a>
                 </p>
             </div>
           </div>
         </section>
-         <section style="height: 10px;  border-top: 1px solid #ccc; margin: 0 100px 60px 100px;"id "HOME" class="river">
+         <section style="height: 10px;  border-top: 1px solid #ccc; margin: 0 100px 60px 100px;" class="river">
 
         </section>
         <section style="height: 500px; " class="intro">
@@ -360,11 +375,11 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
     </main>
 
   </div>
-  <footer style="height: 100px; " id="CONTACT" class="contact">
-        <a href="https://www.instagram.com/wn_10.17_/" target="_blank">Instagram : wn_10.17_</a> &nbsp;
-        <a href="https://www.facebook.com/profile.php?id=100022073732968" target="_blank">Facebook : 陳偉群</a>
+  <footer style="height: 100px; " class="contact">
+        <a href="https://www.instagram.com/wn_10.17_/" target="_blank" rel="noopener noreferrer">Instagram : wn_10.17_</a> &nbsp;
+        <a href="https://www.facebook.com/profile.php?id=100022073732968" target="_blank" rel="noopener noreferrer">Facebook : 陳偉群</a>
   </footer>
 
-<script src="main.js"></script>
+<script defer src="main.js"></script>
 </body>
 </html>

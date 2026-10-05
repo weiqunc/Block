@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.querySelector(".modal .close");
   const posts = [
     {
+      id: "postJ",
       title: "",
       content: `“我又做了自己的 Spoti...？” 
 
@@ -77,19 +78,20 @@ Verse 還同時支援手機和電腦螢幕（終於）。當然如果你用下�
 連結在這裡：https://weiqunc.github.io/Verse/
       `,
       photos: [
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-1.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-2.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-3.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-4.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-5.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-6.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-7.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postJ-8.jpg"
+        "postJ-1.jpg",
+        "postJ-2.jpg",
+        "postJ-3.jpg",
+        "postJ-4.jpg",
+        "postJ-5.jpg",
+        "postJ-6.jpg",
+        "postJ-7.jpg",
+        "postJ-8.jpg"
       ],
       size: "large",
       location: "臺灣"
     },
     {
+      id: "postI",
       title: "",
       content: `“我做了自己的 Instagram。” 
 
@@ -114,14 +116,15 @@ Verse 還同時支援手機和電腦螢幕（終於）。當然如果你用下�
 連結在這裡：https://weiqunc.github.io/Block/
       `,
       photos: [
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postI-1.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postI-2.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postI-3.jpg"
+        "postI-1.jpg",
+        "postI-2.jpg",
+        "postI-3.jpg"
       ],
       size: "large",
       location: "臺灣"
     },
     {
+      id: "postH",
       title: "",
       content: `🌸Sakura Science Exchange Program🌸
 
@@ -141,31 +144,32 @@ Verse 還同時支援手機和電腦螢幕（終於）。當然如果你用下�
 Thank you to everyone I met in this journey.
 It means a lot to me.`,
       photos: [
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-1.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-2.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-3.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-4.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-5.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-6.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-7.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-8.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-9.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-10.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-11.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-12.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-13.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-14.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-15.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-16.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-17.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-18.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-19.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postH-20.jpg"
+        "postH-1.jpg",
+        "postH-2.jpg",
+        "postH-3.jpg",
+        "postH-4.jpg",
+        "postH-5.jpg",
+        "postH-6.jpg",
+        "postH-7.jpg",
+        "postH-8.jpg",
+        "postH-9.jpg",
+        "postH-10.jpg",
+        "postH-11.jpg",
+        "postH-12.jpg",
+        "postH-13.jpg",
+        "postH-14.jpg",
+        "postH-15.jpg",
+        "postH-16.jpg",
+        "postH-17.jpg",
+        "postH-18.jpg",
+        "postH-19.jpg",
+        "postH-20.jpg"
       ],
       size: "small",
       location: "Tokyo Japan"
     },
     {
+      id: "postG",
       title: "",
       content: `“有些事一旦化為言語，反而會太過輕柔，隨風飛去。
 不如像飄落的花瓣一般，一點一滴慢慢地傳達。”
@@ -284,19 +288,19 @@ It means a lot to me.`,
 
 我輕輕拂去黑板上的字跡，連同我的青春。`,
       photos: [
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-1.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-2.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-3.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-4.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-5.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-6.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-7.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-8.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-9.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-10.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-11.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-12.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postG-13.jpg",
+        "postG-1.jpg",
+        "postG-2.jpg",
+        "postG-3.jpg",
+        "postG-4.jpg",
+        "postG-5.jpg",
+        "postG-6.jpg",
+        "postG-7.jpg",
+        "postG-8.jpg",
+        "postG-9.jpg",
+        "postG-10.jpg",
+        "postG-11.jpg",
+        "postG-12.jpg",
+        "postG-13.jpg",
         "https://media.githubusercontent.com/media/weiqunc/Block/main/postG-14.mp4",
         "https://media.githubusercontent.com/media/weiqunc/Block/main/postG-15.mp4"
       ],
@@ -304,6 +308,7 @@ It means a lot to me.`,
       location: "彰化高中雨賢館"
     },
     {
+      id: "postF",
       title: "",
       content: `“雨過天晴，走過一切皆是風景“
 
@@ -333,6 +338,7 @@ It means a lot to me.`,
       location: "曼谷,臺北"
     },
     {
+      id: "postE",
       title: "",
       content: `“當抵達的那一刻，曾經的我就已功成身退了“
 
@@ -357,22 +363,23 @@ Thank you, guys. I had a fantastic night.
 
 Now, I am back.`,
       photos: [
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-1.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-2.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-3.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-4.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-5.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-6.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-7.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-8.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-9.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-10.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postE-11.jpg"
+        "postE-1.jpg",
+        "postE-2.jpg",
+        "postE-3.jpg",
+        "postE-4.jpg",
+        "postE-5.jpg",
+        "postE-6.jpg",
+        "postE-7.jpg",
+        "postE-8.jpg",
+        "postE-9.jpg",
+        "postE-10.jpg",
+        "postE-11.jpg"
       ],
       size: "large",
       location: "國立臺灣科學教育館"
     },
     {
+      id: "postD",
       title: "",
       content: `彰化高中第十二屆科學班成果發表會 Hepatica
 @hepatica_chsh12th
@@ -458,21 +465,22 @@ Now, I am back.`,
 
 總召 陳偉群`,
       photos: [
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-1.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-2.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-3.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-4.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-5.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-6.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-7.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-8.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postD-9.jpg",
+        "postD-1.jpg",
+        "postD-2.jpg",
+        "postD-3.jpg",
+        "postD-4.jpg",
+        "postD-5.jpg",
+        "postD-6.jpg",
+        "postD-7.jpg",
+        "postD-8.jpg",
+        "postD-9.jpg",
         "https://media.githubusercontent.com/media/weiqunc/Block/main/postD-10.mp4"
       ],
       size: "large",
       location: "彰化高中雨賢館"
     },
     {
+      id: "postC",
       title: "",
       content: `“真正熱愛才能體會的那種感動“ 
 
@@ -495,16 +503,16 @@ Culture Night. Thank you for your hospitality. Your performances are impressive.
 
 I will be back.`,
       photos: [
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-1.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-2.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-3.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-4.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-5.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-6.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-7.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-8.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-9.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/postC-10.jpg"
+        "postC-1.jpg",
+        "postC-2.jpg",
+        "postC-3.jpg",
+        "postC-4.jpg",
+        "postC-5.jpg",
+        "postC-6.jpg",
+        "postC-7.jpg",
+        "postC-8.jpg",
+        "postC-9.jpg",
+        "postC-10.jpg"
       ],
       size: "small",
       location: "國立臺灣科學教育館"
@@ -512,6 +520,7 @@ I will be back.`,
   ];
   const SideProjects = [
     {
+      id: "journal-20260214",
       title: "",
       content: `2026.2.14 日誌
 
@@ -530,23 +539,25 @@ I will be back.`,
       location: "臺灣"
     },
     {
+      id: "spD",
       title: "",
       content: `Verse
       `,
       photos: [
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-1.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-2.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-3.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-4.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-5.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-6.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-7.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spD-8.jpg"
+        "spD-1.jpg",
+        "spD-2.jpg",
+        "spD-3.jpg",
+        "spD-4.jpg",
+        "spD-5.jpg",
+        "spD-6.jpg",
+        "spD-7.jpg",
+        "spD-8.jpg"
       ],
       size: "large",
       location: "臺灣"
     },
     {
+      id: "spC",
       title: "",
       content: `"Texas hold 'em"
 
@@ -561,601 +572,437 @@ I will be back.`,
 不過因為功能還稱不上是可玩，所以先不放上連結了。
       `,
       photos: [
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spC-1.jpg",
-        "https://cdn.jsdelivr.net/gh/weiqunc/Block@main/spC-2.jpg"
+        "spC-1.jpg",
+        "spC-2.jpg"
       ],
       size: "large",
       location: "臺灣"
     }
   ];
 
-  let currentPageData = posts; // 預設使用 posts
-  let currentDataType = "posts"; // 追蹤當前數據類型
-
-  let current = 0,
-    slides = [];
+  const pages = [...document.querySelectorAll('.page')];
+  const navLinks = [...document.querySelectorAll('nav a[data-page]')];
+  const menu = document.querySelector('.menu');
+  const nav = document.getElementById('siteNav');
+  const prevBtn = document.getElementById('prevPostBtn');
+  const nextBtn = document.getElementById('nextPostBtn');
+  const modalBox = document.getElementById('modalContentBox');
+  const locationContainer = document.getElementById('modalLocationContainer');
+  pages.forEach(page => { page.querySelector('main').tabIndex = -1; });
+  document.querySelector('.skip-link').addEventListener('click', event => {
+    event.preventDefault(); document.querySelector('.page.active main').focus();
+  });
+  const slideCount = document.getElementById('slideCount');
+  let currentPageData = posts;
+  let currentPageId = 'HOME';
+  let lastHandledHash = null;
+  let canReturnToList = false;
   let currentPostIdx = 0;
+  let current = 0;
+  let slides = [];
+  let returnFocus = null;
+  let touchStart = null;
+  let previousOverflow = '';
+  const mediaStatus = document.createElement('div');
+  mediaStatus.className = 'media-status';
+  mediaStatus.setAttribute('role', 'status');
+  const mediaMessage = document.createElement('span');
+  const retryMedia = document.createElement('button');
+  retryMedia.type = 'button'; retryMedia.textContent = '重試載入';
+  mediaStatus.append(mediaMessage, retryMedia);
+  retryMedia.addEventListener('click', () => {
+    const active = slides[current];
+    if (!active) return;
+    active.dataset.failed = '';
+    if (active.tagName === 'VIDEO') {
+      delete active.dataset.localFallback;
+      active.dataset.src = active.dataset.originalSrc;
+      active.src = active.dataset.src;
+      active.load(); active.play().catch(() => {});
+    }
+    else { active.removeAttribute('src'); active.src = active.dataset.src; }
+    updateMediaStatus();
+  });
+  function updateMediaStatus() {
+    const active = slides[current];
+    const failed = active?.dataset.failed === 'true';
+    const ready = !active || (active.tagName === 'VIDEO' ? active.readyState >= 2 : active.complete && active.naturalWidth > 0);
+    mediaStatus.hidden = !failed && ready;
+    mediaMessage.textContent = failed ? '媒體暫時無法載入。請確認連線或重試。' : '載入中…';
+    retryMedia.hidden = !failed;
+  }
+  const shareButton = document.getElementById('copyPostLink');
+  const shareStatus = document.getElementById('shareStatus');
+  const shareFallback = document.getElementById('shareFallback');
 
-  document.querySelectorAll(".cover-img").forEach((img) => {
-    img.addEventListener("click", function () {
-      openPost(Number(img.getAttribute("data-index")));
+  function writeHash(hash, mode = 'replace') {
+    if (location.hash !== hash) history[mode === 'push' ? 'pushState' : 'replaceState']({page: currentPageId}, '', hash);
+    lastHandledHash = location.hash;
+  }
+  function postHash() {
+    return `#${currentPageId}/${currentPageData[currentPostIdx].id}/${current + 1}`;
+  }
+
+  function setMenu(open) {
+    nav.classList.toggle('open', open);
+    menu.setAttribute('aria-expanded', String(open));
+    menu.setAttribute('aria-label', open ? '關閉導覽' : '開啟導覽');
+  }
+  menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
+
+  function showPage(requestedPage, historyMode = 'none') {
+    const target = pages.find(page => page.id === requestedPage) || pages[0];
+    if (modal.getAttribute('aria-hidden') === 'false') closeModal(false);
+    pages.forEach(page => {
+      const active = page === target;
+      page.classList.toggle('active', active);
+      page.hidden = !active;
+    });
+    navLinks.forEach(link => {
+      const active = link.dataset.page === target.id;
+      link.classList.toggle('active', active);
+      if (active) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+    currentPageId = target.id;
+    document.title = `${target.id === 'HOME' ? 'Wei-Chun Chen' : target.id.replace('_', ' ')} | Block`;
+    currentPageData = target.id === 'SIDE_PROJECT' ? SideProjects : posts;
+    setMenu(false);
+    if (historyMode !== 'none') writeHash(`#${target.id}`, historyMode);
+    if (historyMode === 'push') window.scrollTo({top: 0, behavior: 'instant'});
+  }
+  navLinks.forEach(link => link.addEventListener('click', event => {
+    event.preventDefault();
+    showPage(link.dataset.page, 'push');
+  }));
+  function navigateLocation() {
+    if (location.hash === lastHandledHash) return;
+    const [pageId, postId, slideNumber] = location.hash.slice(1).split('/');
+    const target = pages.find(page => page.id === pageId) || pages[0];
+    showPage(target.id);
+    canReturnToList = false;
+    const index = currentPageData.findIndex(post => post.id === postId);
+    if (['POST', 'SIDE_PROJECT'].includes(target.id) && postId && index >= 0) {
+      const count = currentPageData[index].photos.length;
+      const slideIndex = Math.min(Math.max(0, count - 1), Math.max(0, (Number(slideNumber) || 1) - 1));
+      openPost(index, {historyMode: 'none', slideIndex: Math.floor(slideIndex)});
+      writeHash(postHash());
+    } else {
+      writeHash(`#${target.id}`);
+    }
+    lastHandledHash = location.hash;
+  }
+  window.addEventListener('popstate', navigateLocation);
+  window.addEventListener('hashchange', navigateLocation);
+  navigateLocation();
+
+  // Search uses complete text while the list keeps its short previews.
+  function normalized(value) { return String(value).normalize('NFKC').toLocaleLowerCase(); }
+  for (const [pageId, data] of [['POST', posts], ['SIDE_PROJECT', SideProjects]]) {
+    const page = document.getElementById(pageId);
+    const gallery = page.querySelector('.gallery');
+    const form = document.createElement('form');
+    form.className = 'post-search';
+    form.setAttribute('role', 'search');
+    const label = document.createElement('label');
+    const input = document.createElement('input');
+    input.type = 'search';
+    input.id = `${pageId}-search`;
+    input.placeholder = '搜尋文字、日期或地點';
+    label.htmlFor = input.id;
+    label.textContent = pageId === 'POST' ? '搜尋貼文' : '搜尋 Side Projects';
+    const clear = document.createElement('button');
+    clear.type = 'button'; clear.textContent = '清除';
+    const status = document.createElement('p');
+    status.className = 'search-status'; status.setAttribute('role', 'status');
+    const empty = document.createElement('p');
+    empty.className = 'search-empty'; empty.textContent = '沒有符合的貼文。試著換一個關鍵字。'; empty.hidden = true;
+    const entries = [...gallery.querySelectorAll('.addtext')].map(row => {
+      const img = row.querySelector('.cover-img');
+      const post = data[Number(img.dataset.index)];
+      const full = normalized(`${post.title} ${post.content} ${post.location} ${row.textContent}`);
+      const link = document.createElement('a');
+      link.className = 'read-post'; link.href = `#${pageId}/${post.id}/1`; link.textContent = '閱讀全文';
+      link.setAttribute('aria-haspopup', 'dialog');
+      link.addEventListener('click', event => {
+        event.preventDefault(); openPost(Number(img.dataset.index));
+      });
+      row.querySelector('.blocktext').append(link);
+      return {row, full};
+    });
+    const filter = () => {
+      const terms = normalized(input.value).trim().split(/\s+/).filter(Boolean);
+      let visible = 0;
+      entries.forEach(({row, full}) => { row.hidden = !terms.every(term => full.includes(term)); if (!row.hidden) visible++; });
+      status.textContent = `顯示 ${visible} / ${entries.length} 篇`;
+      empty.hidden = visible > 0;
+      clear.disabled = !input.value;
+    };
+    form.addEventListener('submit', event => event.preventDefault());
+    input.addEventListener('input', filter);
+    clear.addEventListener('click', () => { input.value = ''; filter(); input.focus(); });
+    form.append(label, input, clear, status);
+    gallery.before(form, empty);
+    filter();
+  }
+
+  shareButton.addEventListener('click', async () => {
+    const value = location.href;
+    shareButton.disabled = true;
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(value);
+      if (value !== location.href) return;
+      shareStatus.textContent = '連結已複製';
+      shareFallback.hidden = true;
+    } catch {
+      if (value !== location.href) return;
+      shareStatus.textContent = '請選取下方連結並複製';
+      shareFallback.hidden = false;
+      shareFallback.value = value;
+      shareFallback.focus(); shareFallback.select();
+    } finally { shareButton.disabled = false; }
+  });
+
+  document.querySelectorAll('.cover-img').forEach(img => {
+    img.setAttribute('role', 'button');
+    img.tabIndex = 0;
+    img.setAttribute('aria-haspopup', 'dialog');
+    const summary = img.closest('.addtext').querySelector('.helloword');
+    img.setAttribute('aria-label', `查看貼文：${summary.textContent.trim().slice(0, 45)}`);
+    const activate = () => openPost(Number(img.dataset.index));
+    img.addEventListener('click', activate);
+    img.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        activate();
+      }
     });
   });
 
-  document.getElementById("modalContentBox").classList.add("large");
-  document.getElementById("modalContentBox").classList.remove("small");
-
-  // 變小
-  document.getElementById("modalContentBox").classList.add("small");
-  document.getElementById("modalContentBox").classList.remove("large");
-
-  // 恢復一般
-  document.getElementById("modalContentBox").classList.remove("large", "small");
-
-  // 關閉彈窗
-  closeBtn.onclick = closeModal;
-  window.onclick = function (e) {
-    if (e.target === modal) closeModal();
-  };
-  function closeModal() {
-    modal.style.display = "none";
-    document.body.style.overflow = "";
-    document.onkeydown = null;
-    prevBtn.style.display = "none";
-    nextBtn.style.display = "none";
+  function pauseVideos() {
+    slides.forEach(slide => { if (slide.tagName === 'VIDEO') slide.pause(); });
   }
-  const prevBtn = document.getElementById("prevPostBtn");
-  const nextBtn = document.getElementById("nextPostBtn");
-
-  function openPost(idx) {
-    currentPostIdx = idx;
-    const post = currentPageData[idx]; // 使用當前頁面的數據
-
-    if (!post) return; // 如果沒有對應的貼文，直接返回
-
-    const modalBox = document.getElementById("modalContentBox");
-
-    // 控制大小
-    modalBox.classList.remove("large", "small");
-    if (post.size === "large") modalBox.classList.add("large");
-    if (post.size === "small") modalBox.classList.add("small");
-
-    // 標題、內容
-    modalTitle.innerText = post.title;
-    modalContent.innerText = post.content;
-
-    const locationContainer = document.getElementById("modalLocationContainer");
-    if (locationContainer && post.location) {
-      if (post.size === "large") {
-        locationContainer.innerHTML = `<p class="modal-location-large">${post.location}</p>`;
-      } else if (post.size === "small") {
-        locationContainer.innerHTML = `<p class="modal-location-small">${post.location}</p>`;
-      }
+  function closeModal(updateHistory = true) {
+    const wasOpen = modal.getAttribute('aria-hidden') === 'false';
+    pauseVideos();
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = previousOverflow;
+    prevBtn.style.display = nextBtn.style.display = 'none';
+    document.querySelectorAll('header, footer, .page, .skip-link').forEach(el => { el.inert = false; });
+    const fallback = document.querySelector(`#${currentPageId} .cover-img[data-index="${currentPostIdx}"]`) || navLinks.find(link => link.dataset.page === currentPageId);
+    const focus = returnFocus && returnFocus !== document.body && returnFocus.isConnected && returnFocus.getClientRects().length ? returnFocus : fallback;
+    focus?.focus({preventScroll: true});
+    document.title = `${currentPageId.replace('_', ' ')} | Block`;
+    if (wasOpen && updateHistory) {
+      if (canReturnToList) { canReturnToList = false; history.back(); }
+      else writeHash(`#${currentPageId}`);
     }
+  }
+  closeBtn.addEventListener('click', () => closeModal());
+  modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
+  prevBtn.addEventListener('click', () => openPost(currentPostIdx - 1));
+  nextBtn.addEventListener('click', () => openPost(currentPostIdx + 1));
 
-    // 多圖輪播
-    modalSlider.innerHTML = `
-    <button class="arrow prev" aria-label="上一張"><span class="arrow-shape left"></span></button>
-    ${post.photos
-      .map((src, i) => {
-        const isVideo = src.toLowerCase().match(/\.(mp4|mov|webm|avi)$/);
-        if (isVideo) {
-          return `<video src="${src}" type="video/mp4" class="slide${
-            i === 0 ? " active" : ""
-          }" controls autoplay muted></video>`;
-        } else {
-          return `<img src="${src}" loading="lazy" class="slide${
-            i === 0 ? " active" : ""
-          }" alt="貼文圖片${i + 1}">`;
-        }
-      })
-      .join("")}
-    <button class="arrow next" aria-label="下一張"><span class="arrow-shape right"></span></button>
-    <div class="indicators" id="modalIndicators"></div>
-  `;
-
-    slides = modalSlider.querySelectorAll(".slide");
-    current = 0;
-
-    // 指示點
-    const modalIndicators = modalSlider.querySelector("#modalIndicators");
-    modalIndicators.innerHTML = Array.from({ length: post.photos.length })
-      .map(
-        (_, i) =>
-          `<span class="indicator-dot${
-            i === 0 ? " active" : ""
-          }" data-index="${i}"></span>`
-      )
-      .join("");
-
-    // 指示點點擊
-    const indicatorDots = modalIndicators.querySelectorAll(".indicator-dot");
-    indicatorDots.forEach((dot) => {
-      dot.onclick = function () {
-        current = Number(dot.getAttribute("data-index"));
-        updateSlider();
-      };
-    });
-
-    // 彈窗顯示
-    modal.style.display = "block";
-    document.body.style.overflow = "hidden";
+  function changeSlide(index) {
+    if (index < 0 || index >= slides.length) return;
+    current = index;
     updateSlider();
-    updateBigPostArrows();
-
-    // 添加滾動監聽 - 讓圖片隨滾動向上移動
-    const isMobile = window.innerWidth <= 480;
-
-    if (isMobile) {
-      // 小螢幕：重置整個模態框的滾動
-      setTimeout(() => {
-        modalBox.scrollTop = 0;
-      }, 100);
-    } else {
-      // 大螢幕：保持原有行為
-      const textArea = document.querySelector(".post-text-area");
-      if (textArea) {
-        setTimeout(() => {
-          textArea.scrollTop = 0;
-        }, 100);
+    shareStatus.textContent = ''; shareFallback.hidden = true;
+    if (modal.getAttribute('aria-hidden') === 'false') writeHash(postHash());
+  }
+  function updateSlider() {
+    slides.forEach((el, i) => {
+      const active = i === current;
+      el.classList.toggle('active', active);
+      el.hidden = !active;
+      if (active && !el.getAttribute('src')) el.src = el.dataset.src;
+      if (el.tagName === 'VIDEO') {
+        if (active) el.play().catch(() => {});
+        else el.pause();
       }
+    });
+    modalSlider.querySelectorAll('.indicator-dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i === current);
+      dot.setAttribute('aria-pressed', String(i === current));
+    });
+    const prev = modalSlider.querySelector('.prev');
+    const next = modalSlider.querySelector('.next');
+    prev.disabled = current === 0;
+    next.disabled = slides.length === 0 || current === slides.length - 1;
+    prev.classList.toggle('hidden', prev.disabled);
+    next.classList.toggle('hidden', next.disabled);
+    slideCount.textContent = slides.length ? `${current + 1} / ${slides.length} 張` : '沒有圖片';
+    updateMediaStatus();
+    const following = slides[current + 1];
+    if (following && following.tagName === 'IMG' && !following.getAttribute('src')) {
+      following.src = following.dataset.src;
     }
-
-    // 箭頭事件
-    modalSlider.querySelector(".prev").onclick = function () {
-      if (current > 0) {
-        current--;
-        updateSlider();
-      }
-    };
-    modalSlider.querySelector(".next").onclick = function () {
-      if (current < slides.length - 1) {
-        current++;
-        updateSlider();
-      }
-    };
-
-    document.onkeydown = function (e) {
-      if (modal.style.display === "block") {
-        // 左右方向鍵：切換圖片
-        if (e.key === "ArrowLeft" && current > 0) {
-          e.preventDefault();
-          current--;
-          updateSlider();
-        }
-        if (e.key === "ArrowRight" && current < slides.length - 1) {
-          e.preventDefault();
-          current++;
-          updateSlider();
-        }
-
-        // 上下方向鍵：切換貼文
-        if (e.key === "ArrowUp") {
-          e.preventDefault(); // 防止頁面滾動
-          if (currentPostIdx > 0) {
-            openPost(currentPostIdx - 1); // 上一篇貼文
-          }
-        }
-        if (e.key === "ArrowDown") {
-          e.preventDefault(); // 防止頁面滾動
-          if (currentPostIdx < posts.length - 1) {
-            openPost(currentPostIdx + 1); // 下一篇貼文
-          }
-        }
-
-        // ESC 鍵：關閉彈窗
-        if (e.key === "Escape") {
-          closeModal();
-        }
-      }
-    };
-
-    function updateSlider() {
-      slides.forEach((el, i) => {
-        const isActive = i === current;
-        el.classList.toggle("active", isActive);
-
-        if (el.tagName.toLowerCase() === "video") {
-          if (isActive) {
-            el.play().catch(() => {
-              /* 播放失敗可忽略或提示 */
-            });
-          } else {
-            el.pause();
-            el.currentTime = 0; // 可選把影片回到起點
-          }
-        }
+  }
+  function makeArrow(direction, label, action) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = `arrow ${direction}`;
+    button.setAttribute('aria-label', label);
+    const shape = document.createElement('span');
+    shape.className = `arrow-shape ${direction === 'prev' ? 'left' : 'right'}`;
+    button.append(shape);
+    button.addEventListener('click', action);
+    return button;
+  }
+  function renderPostText(target, text) {
+    const fragment = document.createDocumentFragment();
+    let cursor = 0;
+    for (const match of text.matchAll(/https?:\/\/[^\s<>"'，。！？、（）「」]+/g)) {
+      const value = match[0];
+      let url;
+      try {url = new URL(value);} catch {continue;}
+      if (!['http:','https:'].includes(url.protocol)) continue;
+      fragment.append(document.createTextNode(text.slice(cursor,match.index)));
+      const link = document.createElement('a');
+      link.href = url.href;link.textContent = value;link.target = '_blank';link.rel = 'noopener noreferrer';
+      fragment.append(link);cursor = match.index + value.length;
+    }
+    fragment.append(document.createTextNode(text.slice(cursor)));
+    target.replaceChildren(fragment);
+  }
+  function openPost(index, {historyMode = 'auto', slideIndex = 0} = {}) {
+    if (!Number.isInteger(index) || index < 0 || index >= currentPageData.length) return;
+    if (!['POST', 'SIDE_PROJECT'].includes(currentPageId)) showPage('POST');
+    const post = currentPageData[index];
+    const wasOpen = modal.getAttribute('aria-hidden') === 'false';
+    if (!wasOpen) {
+      returnFocus = document.activeElement;
+      previousOverflow = document.body.style.overflow;
+    }
+    pauseVideos();
+    currentPostIdx = index;
+    current = slideIndex;
+    shareStatus.textContent = ''; shareFallback.hidden = true;
+    modalBox.classList.toggle('large', post.size === 'large');
+    modalBox.classList.toggle('small', post.size === 'small');
+    document.title = `${post.content.trim().split('\n')[0].slice(0, 70)} | Block`;
+    modalTitle.textContent = post.title;
+    renderPostText(modalContent, post.content);
+    locationContainer.textContent = post.location || '';
+    modalSlider.replaceChildren();
+    const indicators = document.createElement('div');
+    indicators.className = 'indicators';
+    indicators.setAttribute('aria-label', '圖片選擇');
+    slides = post.photos.map((src, i) => {
+      const video = /\.(mp4|mov|webm|avi)(?:[?#]|$)/i.test(src);
+      const media = document.createElement(video ? 'video' : 'img');
+      media.className = 'slide';
+      media.dataset.src = src;
+      media.dataset.originalSrc = src;
+      media.hidden = true;
+      media.addEventListener(video ? 'loadeddata' : 'load', updateMediaStatus);
+      media.addEventListener('error', () => {
+        if (video && !media.dataset.localFallback) {
+          media.dataset.localFallback = 'true';
+          media.dataset.src = src.split('/').pop();
+          media.src = media.dataset.src;
+          if (media === slides[current]) media.play().catch(() => {});
+        } else { media.dataset.failed = 'true'; updateMediaStatus(); }
       });
-
-      preloadNextImage();
-
-      slides.forEach((img, i) => img.classList.toggle("active", i === current));
-      const prev = modalSlider.querySelector(".prev");
-      const next = modalSlider.querySelector(".next");
-
-      // 指示點同步高亮
-      const indicatorDots = modalSlider.querySelectorAll(".indicator-dot");
-      indicatorDots.forEach((dot, i) => {
-        dot.classList.toggle("active", i === current);
-      });
-
-      // 箭頭控制
-      if (current === 0) {
-        prev.classList.add("hidden");
+      if (video) {
+        media.controls = true;
+        media.muted = true;
+        media.playsInline = true;
+        media.preload = 'none';
       } else {
-        prev.classList.remove("hidden");
+        media.alt = `貼文圖片 ${i + 1} / ${post.photos.length}`;
+        media.decoding = 'async';
       }
-      if (current === slides.length - 1) {
-        next.classList.add("hidden");
-      } else {
-        next.classList.remove("hidden");
-      }
-      prev.disabled = current === 0;
-      next.disabled = current === slides.length - 1;
+      modalSlider.append(media);
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'indicator-dot';
+      dot.setAttribute('aria-label', `第 ${i + 1} 張`);
+      dot.addEventListener('click', () => changeSlide(i));
+      indicators.append(dot);
+      return media;
+    });
+    if (!slides.length) {
+      const empty = document.createElement('p');
+      empty.className = 'media-empty';
+      empty.textContent = '這篇貼文沒有圖片';
+      modalSlider.append(empty);
     }
-
-    function preloadNextImage() {
-      const post = posts[currentPostIdx];
-      const nextIndex = current + 1;
-
-      if (nextIndex < post.photos.length) {
-        const nextSrc = post.photos[nextIndex];
-        const isVideo = nextSrc.toLowerCase().match(/\.(mp4|mov|webm|avi)$/);
-
-        if (!isVideo) {
-          const img = new Image();
-          img.src = nextSrc;
-          console.log("預載下一張圖片:", nextSrc);
-        }
-      }
+    modalSlider.append(
+      makeArrow('prev', '上一張', () => changeSlide(current - 1)),
+      makeArrow('next', '下一張', () => changeSlide(current + 1)),
+      indicators, mediaStatus
+    );
+    prevBtn.style.display = index > 0 ? 'flex' : 'none';
+    nextBtn.style.display = index < currentPageData.length - 1 ? 'flex' : 'none';
+    modal.style.display = 'block';
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    document.querySelectorAll('header, footer, .page, .skip-link').forEach(el => { el.inert = true; });
+    modalBox.scrollTop = 0;
+    document.querySelector('.post-text-area').scrollTop = 0;
+    updateSlider();
+    if (historyMode === 'auto') {
+      if (!wasOpen) canReturnToList = true;
+      writeHash(postHash(), wasOpen ? 'replace' : 'push');
     }
-    // 每次開啟貼文時呼叫此函式
-    function updateBigPostArrows() {
-      // 若有上一篇才顯示
-      if (currentPostIdx > 0) {
-        prevBtn.style.display = "flex";
-      } else {
-        prevBtn.style.display = "none";
-      }
-      // 若有下一篇才顯示
-      if (currentPostIdx < posts.length - 1) {
-        nextBtn.style.display = "flex";
-      } else {
-        nextBtn.style.display = "none";
-      }
-    }
-
-    // 綁定點擊事件（只對點擊有功能）
-    prevBtn.onclick = function () {
-      if (currentPostIdx > 0) {
-        openPost(currentPostIdx - 1); // 切換到上一篇
-      }
+    if (!wasOpen || !document.activeElement.getClientRects().length) closeBtn.focus({preventScroll: true});
+  }
+  document.querySelectorAll('picture img').forEach(img => {
+    const recover = () => {
+      const source = img.closest('picture')?.querySelector('source');
+      if (source) { source.remove(); img.src = img.getAttribute('src'); }
     };
-    nextBtn.onclick = function () {
-      if (currentPostIdx < posts.length - 1) {
-        openPost(currentPostIdx + 1); // 切換到下一篇
+    img.addEventListener('error', recover);
+    // An eager image can fail before DOMContentLoaded installs the listener.
+    if (img.complete && img.naturalWidth === 0) recover();
+  });
+  // Keep the existing public entry point for links or future integrations.
+  window.openPost = openPost;
+
+  document.addEventListener('keydown', event => {
+    if (modal.getAttribute('aria-hidden') !== 'false') {
+      if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
+        setMenu(false);
+        menu.focus();
       }
+      return;
+    }
+    if (event.key === 'Escape') { event.preventDefault(); closeModal(); return; }
+    if (event.key === 'Tab') {
+      const focusable = [prevBtn, nextBtn, ...modal.querySelectorAll('a[href], button, input, video[controls]')]
+        .filter(el => !el.disabled && !el.hidden && el.getClientRects().length > 0);
+      const index = focusable.indexOf(document.activeElement);
+      const next = event.shiftKey ? (index <= 0 ? focusable.length - 1 : index - 1) : (index + 1) % focusable.length;
+      event.preventDefault();
+      (focusable[next] || modal).focus();
+      return;
+    }
+    if (['VIDEO', 'INPUT', 'TEXTAREA'].includes(event.target.tagName) || event.altKey || event.ctrlKey || event.metaKey) return;
+    const actions = {
+      ArrowLeft: () => changeSlide(current - 1),
+      ArrowRight: () => changeSlide(current + 1),
+      ArrowUp: () => openPost(currentPostIdx - 1),
+      ArrowDown: () => openPost(currentPostIdx + 1)
     };
-
-    if (isMobile) {
-      // 小螢幕：重置統一滾動容器
-      const contentWrapper = document.querySelector(".content-wrapper");
-      if (contentWrapper) {
-        setTimeout(() => {
-          contentWrapper.scrollTop = 0;
-        }, 100);
-      }
-    } else {
-      // 大螢幕：重置文字區域滾動
-      const textArea = document.querySelector(".post-text-area");
-      if (textArea) {
-        setTimeout(() => {
-          textArea.scrollTop = 0;
-        }, 100);
-      }
-    }
-  }
-  document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
-    return false;
+    if (actions[event.key]) { event.preventDefault(); actions[event.key](); }
   });
-  function protectImages() {
-    const allImages = document.querySelectorAll("img");
-    allImages.forEach((img) => {
-      // 禁用拖拽
-      img.addEventListener("dragstart", function (e) {
-        e.preventDefault();
-        return false;
-      });
-
-      // 禁用右鍵
-      img.addEventListener("contextmenu", function (e) {
-        e.preventDefault();
-        return false;
-      });
-
-      // 添加選取保護
-      img.style.webkitUserSelect = "none";
-      img.style.mozUserSelect = "none";
-      img.style.msUserSelect = "none";
-      img.style.userSelect = "none";
-      img.style.webkitUserDrag = "none";
-      img.style.mozUserDrag = "none";
-      img.style.userDrag = "none";
-    });
-  }
-
-  // 初始保護
-  protectImages();
-
-  // 在開啟貼文時也要保護新載入的圖片
-  const originalOpenPost = openPost;
-  window.openPost = function (idx) {
-    originalOpenPost(idx);
-    // 延遲保護新載入的圖片
-    setTimeout(protectImages, 100);
-  };
-
-  // 3. 禁用鍵盤快捷鍵
-  document.addEventListener("keydown", function (e) {
-    // 禁用開發者工具快捷鍵
-    if (
-      e.key === "F12" ||
-      (e.ctrlKey && e.shiftKey && e.key === "I") ||
-      (e.ctrlKey && e.shiftKey && e.key === "C") ||
-      (e.ctrlKey && e.key === "u") ||
-      (e.ctrlKey && e.key === "s")
-    ) {
-      e.preventDefault();
-      return false;
+  modalSlider.addEventListener('touchstart', event => {
+    const touch = event.touches[0];
+    touchStart = event.touches.length === 1 && event.target.tagName !== 'VIDEO'
+      ? {x: touch.clientX, y: touch.clientY, time: Date.now()} : null;
+  }, {passive: true});
+  modalSlider.addEventListener('touchend', event => {
+    if (!touchStart || modal.getAttribute('aria-hidden') !== 'false') return;
+    const touch = event.changedTouches[0];
+    const dx = touchStart.x - touch.clientX;
+    const dy = touchStart.y - touch.clientY;
+    if (Date.now() - touchStart.time < 500 && Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      changeSlide(current + (dx > 0 ? 1 : -1));
     }
-  });
-
-  // 改進的預載函數
-  function preloadImages() {
-    posts.forEach((post, postIndex) => {
-      post.photos.forEach((src, imageIndex) => {
-        // 跳過影片
-        if (!src.toLowerCase().match(/\.(mp4|mov|webm|avi)$/)) {
-          const img = new Image();
-          img.src = src;
-          // 預載首圖優先
-          if (imageIndex === 0) {
-            img.loading = "eager";
-          }
-        }
-      });
-    });
-  }
-  const navLinks = document.querySelectorAll("nav a[data-page]");
-  const pages = document.querySelectorAll(".page");
-
-  // 頁面切換函數
-  function showPage(targetPage) {
-    // 隱藏所有頁面
-    pages.forEach((page) => {
-      page.classList.remove("active");
-    });
-
-    // 顯示目標頁面
-    const targetElement = document.getElementById(targetPage);
-    if (targetElement) {
-      targetElement.classList.add("active");
-    }
-
-    // 更新導航狀態
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.dataset.page === targetPage) {
-        link.classList.add("active");
-      }
-    });
-
-    updateDataSource(targetPage);
-
-    // 更新網址而不重新載入頁面
-    history.pushState({ page: targetPage }, "", `#${targetPage}`);
-  }
-
-  // 綁定導航點擊事件
-  navLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const targetPage = this.dataset.page;
-      showPage(targetPage);
-    });
-  });
-
-  // 處理瀏覽器前進/後退按鈕
-  window.addEventListener("popstate", function (e) {
-    if (e.state && e.state.page) {
-      showPage(e.state.page);
-    } else {
-      // 根據網址決定顯示哪個頁面
-      const hash = window.location.hash.substring(1);
-      const page = hash || "home";
-      showPage(page);
-    }
-  });
-
-  // 初始化：根據網址顯示對應頁面
-  const initialPage = window.location.hash.substring(1) || "HOME";
-  showPage(initialPage);
-
-  function updateDataSource(page) {
-    switch (page) {
-      case "HOME":
-        break;
-      case "POST":
-        currentPageData = posts;
-        currentDataType = "posts";
-        updatePageImages("post");
-        break;
-      case "SIDE_PROJECT": // 假設你的專案頁面叫 projects
-        currentPageData = SideProjects;
-        currentDataType = "sideprojects";
-        updatePageImages("project");
-        break;
-      default:
-        currentPageData = posts;
-        currentDataType = "posts";
-        updatePageImages("post");
-    }
-  }
-
-  // 更新頁面圖片
-  function updatePageImages(pageType) {
-    let coverImages;
-
-    if (pageType === "home") {
-      coverImages = document.querySelectorAll(".home-cover-img");
-    }
-    if (pageType === "post") {
-      coverImages = document.querySelectorAll(".post-cover-img");
-    } else if (pageType === "project") {
-      coverImages = document.querySelectorAll(".project-cover-img");
-    }
-
-    if (coverImages) {
-      coverImages.forEach((img, index) => {
-        if (currentPageData[index] && currentPageData[index].photos[0]) {
-          img.src = currentPageData[index].photos[0];
-          img.setAttribute("data-index", index);
-
-          // 移除舊的事件監聽器並添加新的
-          img.onclick = function () {
-            openPost(Number(this.getAttribute("data-index")));
-          };
-        } else {
-          img.style.display = "none";
-        }
-      });
-    }
-  }
-});
-
-// 在 DOMContentLoaded 中調用
-document.addEventListener("DOMContentLoaded", function () {
-  // 延遲預載非關鍵圖片
-  setTimeout(preloadImages, 2000);
-});
-
-// 在現有的 JavaScript 最後添加這些功能
-
-// 檢測螢幕尺寸並調整
-function adjustForScreenSize() {
-  const modalBox = document.getElementById("modalContentBox");
-
-  if (isMobile && modalBox) {
-    // 手機版特殊處理
-    modalBox.style.margin = "2% auto";
-    modalBox.style.maxHeight = "95vh";
-  }
-}
-
-// 觸控滑動支援
-// 改善觸控滑動邏輯
-let touchStartX = 0;
-let touchStartY = 0;
-let touchStartTime = 0;
-
-document.addEventListener(
-  "touchstart",
-  function (e) {
-    touchStartX = e.touches[0].clientX;
-    touchStartY = e.touches[0].clientY;
-    touchStartTime = Date.now();
-  },
-  { passive: true }
-);
-
-document.addEventListener(
-  "touchend",
-  function (e) {
-    if (modal.style.display !== "block") return;
-
-    const touchEndX = e.changedTouches[0].clientX;
-    const touchEndY = e.changedTouches[0].clientY;
-    const touchEndTime = Date.now();
-
-    const deltaX = touchStartX - touchEndX;
-    const deltaY = touchStartY - touchEndY;
-    const deltaTime = touchEndTime - touchStartTime;
-
-    // 只處理快速滑動（避免與滾動衝突）
-    if (deltaTime < 300) {
-      const slider = document.querySelector(".slider");
-      const rect = slider.getBoundingClientRect();
-      const touchInSlider =
-        touchStartY >= rect.top && touchStartY <= rect.bottom;
-
-      if (touchInSlider) {
-        // 水平滑動切換圖片
-        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
-          if (deltaX > 0 && current < slides.length - 1) {
-            current++;
-            updateSlider();
-          } else if (deltaX < 0 && current > 0) {
-            current--;
-            updateSlider();
-          }
-        }
-      }
-    }
-  },
-  { passive: true }
-);
-
-// 視窗大小改變時重新調整
-window.addEventListener("resize", function () {
-  adjustForScreenSize();
-});
-
-// 頁面載入時初始化
-document.addEventListener("DOMContentLoaded", function () {
-  adjustForScreenSize();
-  // ... 你原有的 DOMContentLoaded 代碼
-});
-
-// 修改觸控滑動邏輯，適應新的垂直布局
-document.addEventListener("touchstart", function (e) {
-  startX = e.touches[0].clientX;
-  startY = e.touches[0].clientY;
-});
-
-document.addEventListener("touchend", function (e) {
-  if (modal.style.display !== "block") return;
-
-  const endX = e.changedTouches[0].clientX;
-  const endY = e.changedTouches[0].clientY;
-  const diffX = startX - endX;
-  const diffY = startY - endY;
-
-  // 檢查觸控是否在圖片區域
-  const slider = document.querySelector(".slider");
-  const rect = slider.getBoundingClientRect();
-  const touchInSlider = startY >= rect.top && startY <= rect.bottom;
-
-  if (touchInSlider) {
-    // 在圖片區域的水平滑動 - 切換圖片
-    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
-      if (diffX > 0 && current < slides.length - 1) {
-        current++;
-        updateSlider();
-      } else if (diffX < 0 && current > 0) {
-        current--;
-        updateSlider();
-      }
-    }
-
-    // 在圖片區域的垂直滑動 - 切換貼文
-    if (Math.abs(diffY) > Math.abs(diffX) && Math.abs(diffY) > 100) {
-      if (diffY > 0 && currentPostIdx < posts.length - 1) {
-        openPost(currentPostIdx + 1);
-      } else if (diffY < 0 && currentPostIdx > 0) {
-        openPost(currentPostIdx - 1);
-      }
-    }
-  }
-  // 在文字區域的滑動由瀏覽器原生處理（滾動文字）
+    touchStart = null;
+  }, {passive: true});
+  modalSlider.addEventListener('touchcancel', () => { touchStart = null; }, {passive: true});
 });
